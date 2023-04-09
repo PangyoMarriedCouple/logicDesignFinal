@@ -1,0 +1,33 @@
+xst -intstyle ise -ifn "/home/ise/XilinxFolder/calendarStopwatch/modeControl1.xst" -ofn "/home/ise/XilinxFolder/calendarStopwatch/modeControl1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc calendarUCF.ucf -p xa7a100t-csg324-2I modeControl1.ngc modeControl1.ngd  
+map -intstyle ise -p xa7a100t-csg324-2I -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o modeControl1_map.ncd modeControl1.ngd modeControl1.pcf 
+xst -intstyle ise -ifn "/home/ise/XilinxFolder/calendarStopwatch/modeControl1.xst" -ofn "/home/ise/XilinxFolder/calendarStopwatch/modeControl1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc calendarUCF.ucf -p xc3s50an-tqg144-5 modeControl1.ngc modeControl1.ngd  
+map -intstyle ise -p xc3s50an-tqg144-5 -cm area -ir off -pr off -c 100 -o modeControl1_map.ncd modeControl1.ngd modeControl1.pcf 
+par -w -intstyle ise -ol high -t 1 modeControl1_map.ncd modeControl1.ncd modeControl1.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml modeControl1.twx modeControl1.ncd -o modeControl1.twr modeControl1.pcf -ucf calendarUCF.ucf 
+bitgen -intstyle ise -f modeControl1.ut modeControl1.ncd 
+xst -intstyle ise -ifn "/csehome/ksw2266/Downloads/calendar_siwonkim/calendarStopwatch/modeControl1.xst" -ofn "/csehome/ksw2266/Downloads/calendar_siwonkim/calendarStopwatch/modeControl1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc calendarUCF.ucf -p xc3s50an-tqg144-5 modeControl1.ngc modeControl1.ngd  
+map -intstyle ise -p xc3s50an-tqg144-5 -cm area -ir off -pr off -c 100 -o modeControl1_map.ncd modeControl1.ngd modeControl1.pcf 
+par -w -intstyle ise -ol high -t 1 modeControl1_map.ncd modeControl1.ncd modeControl1.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml modeControl1.twx modeControl1.ncd -o modeControl1.twr modeControl1.pcf -ucf calendarUCF.ucf 
+bitgen -intstyle ise -f modeControl1.ut modeControl1.ncd 
+xst -intstyle ise -ifn "/csehome/ksw2266/Downloads/calendar_siwonkim/calendarStopwatch/modeControl1.xst" -ofn "/csehome/ksw2266/Downloads/calendar_siwonkim/calendarStopwatch/modeControl1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc calendarUCF.ucf -p xc3s50an-tqg144-5 modeControl1.ngc modeControl1.ngd  
+map -intstyle ise -p xc3s50an-tqg144-5 -cm area -ir off -pr off -c 100 -o modeControl1_map.ncd modeControl1.ngd modeControl1.pcf 
+par -w -intstyle ise -ol high -t 1 modeControl1_map.ncd modeControl1.ncd modeControl1.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml modeControl1.twx modeControl1.ncd -o modeControl1.twr modeControl1.pcf -ucf calendarUCF.ucf 
+bitgen -intstyle ise -f modeControl1.ut modeControl1.ncd 
+xst -intstyle ise -ifn "/csehome/ksw2266/Downloads/calendar_siwonkim/calendarStopwatch/modeControl1.xst" -ofn "/csehome/ksw2266/Downloads/calendar_siwonkim/calendarStopwatch/modeControl1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc calendarUCF.ucf -p xc3s50an-tqg144-5 modeControl1.ngc modeControl1.ngd  
+map -intstyle ise -p xc3s50an-tqg144-5 -cm area -ir off -pr off -c 100 -o modeControl1_map.ncd modeControl1.ngd modeControl1.pcf 
+par -w -intstyle ise -ol high -t 1 modeControl1_map.ncd modeControl1.ncd modeControl1.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml modeControl1.twx modeControl1.ncd -o modeControl1.twr modeControl1.pcf -ucf calendarUCF.ucf 
+bitgen -intstyle ise -f modeControl1.ut modeControl1.ncd 
+xst -intstyle ise -ifn "/csehome/ksw2266/Downloads/calendar_siwonkim/calendarStopwatch/modeControl1.xst" -ofn "/csehome/ksw2266/Downloads/calendar_siwonkim/calendarStopwatch/modeControl1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc calendarUCF.ucf -p xc3s50an-tqg144-5 modeControl1.ngc modeControl1.ngd  
+map -intstyle ise -p xc3s50an-tqg144-5 -cm area -ir off -pr off -c 100 -o modeControl1_map.ncd modeControl1.ngd modeControl1.pcf 
+par -w -intstyle ise -ol high -t 1 modeControl1_map.ncd modeControl1.ncd modeControl1.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml modeControl1.twx modeControl1.ncd -o modeControl1.twr modeControl1.pcf -ucf calendarUCF.ucf 
+bitgen -intstyle ise -f modeControl1.ut modeControl1.ncd 

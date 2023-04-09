@@ -1,0 +1,183 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v 3 -s 2I
+-n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf
+
+Design file:              top.ncd
+Physical constraint file: top.pcf
+Device,package,speed:     xa7a100t,csg324,I,-2I (PRELIMINARY 1.07 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock clk
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+push_switch2|    0.932(R)|      FAST  |    2.591(R)|      SLOW  |clk_BUFGP         |   0.000|
+push_switch3|    5.669(R)|      SLOW  |    1.719(R)|      SLOW  |clk_BUFGP         |   0.000|
+push_switch4|    5.819(R)|      SLOW  |    1.309(R)|      SLOW  |clk_BUFGP         |   0.000|
+push_switch6|    5.707(R)|      SLOW  |    2.125(R)|      SLOW  |clk_BUFGP         |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock clk to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+led1_red    |         9.926(R)|      SLOW  |         3.889(R)|      FAST  |clk_BUFGP         |   0.000|
+led2_yellow |         9.599(R)|      SLOW  |         3.743(R)|      FAST  |clk_BUFGP         |   0.000|
+led3_green  |        10.801(R)|      SLOW  |         4.333(R)|      FAST  |clk_BUFGP         |   0.000|
+led4_red    |         9.943(R)|      SLOW  |         3.822(R)|      FAST  |clk_BUFGP         |   0.000|
+led5_yellow |        10.495(R)|      SLOW  |         4.182(R)|      FAST  |clk_BUFGP         |   0.000|
+led6_green  |         9.388(R)|      SLOW  |         3.599(R)|      FAST  |clk_BUFGP         |   0.000|
+segment1<0> |         9.776(R)|      SLOW  |         3.499(R)|      FAST  |clk_BUFGP         |   0.000|
+segment1<1> |         9.414(R)|      SLOW  |         3.613(R)|      FAST  |clk_BUFGP         |   0.000|
+segment1<2> |         9.745(R)|      SLOW  |         3.738(R)|      FAST  |clk_BUFGP         |   0.000|
+segment1<3> |        10.268(R)|      SLOW  |         3.915(R)|      FAST  |clk_BUFGP         |   0.000|
+segment1<4> |         9.578(R)|      SLOW  |         3.605(R)|      FAST  |clk_BUFGP         |   0.000|
+segment1<5> |         9.909(R)|      SLOW  |         3.769(R)|      FAST  |clk_BUFGP         |   0.000|
+segment1<6> |        10.568(R)|      SLOW  |         3.668(R)|      FAST  |clk_BUFGP         |   0.000|
+segment2<0> |        10.097(R)|      SLOW  |         3.903(R)|      FAST  |clk_BUFGP         |   0.000|
+segment2<1> |         9.710(R)|      SLOW  |         3.753(R)|      FAST  |clk_BUFGP         |   0.000|
+segment2<2> |        10.027(R)|      SLOW  |         3.833(R)|      FAST  |clk_BUFGP         |   0.000|
+segment2<3> |         9.941(R)|      SLOW  |         3.770(R)|      FAST  |clk_BUFGP         |   0.000|
+segment2<4> |        10.172(R)|      SLOW  |         3.851(R)|      FAST  |clk_BUFGP         |   0.000|
+segment2<5> |         9.869(R)|      SLOW  |         3.805(R)|      FAST  |clk_BUFGP         |   0.000|
+segment2<6> |         9.770(R)|      SLOW  |         3.720(R)|      FAST  |clk_BUFGP         |   0.000|
+segment3<0> |         9.672(R)|      SLOW  |         3.767(R)|      FAST  |clk_BUFGP         |   0.000|
+segment3<1> |         9.988(R)|      SLOW  |         3.677(R)|      FAST  |clk_BUFGP         |   0.000|
+segment3<2> |         9.771(R)|      SLOW  |         3.744(R)|      FAST  |clk_BUFGP         |   0.000|
+segment3<3> |        10.135(R)|      SLOW  |         3.840(R)|      FAST  |clk_BUFGP         |   0.000|
+segment3<4> |         9.794(R)|      SLOW  |         3.805(R)|      FAST  |clk_BUFGP         |   0.000|
+segment3<5> |        10.180(R)|      SLOW  |         3.989(R)|      FAST  |clk_BUFGP         |   0.000|
+segment3<6> |        10.244(R)|      SLOW  |         3.893(R)|      FAST  |clk_BUFGP         |   0.000|
+segment4<0> |        10.041(R)|      SLOW  |         3.751(R)|      FAST  |clk_BUFGP         |   0.000|
+segment4<1> |         9.648(R)|      SLOW  |         3.538(R)|      FAST  |clk_BUFGP         |   0.000|
+segment4<2> |         9.863(R)|      SLOW  |         3.729(R)|      FAST  |clk_BUFGP         |   0.000|
+segment4<3> |        10.073(R)|      SLOW  |         3.732(R)|      FAST  |clk_BUFGP         |   0.000|
+segment4<4> |         9.840(R)|      SLOW  |         3.695(R)|      FAST  |clk_BUFGP         |   0.000|
+segment4<5> |         9.648(R)|      SLOW  |         3.750(R)|      FAST  |clk_BUFGP         |   0.000|
+segment4<6> |         9.954(R)|      SLOW  |         3.796(R)|      FAST  |clk_BUFGP         |   0.000|
+segment5<0> |        10.031(R)|      SLOW  |         3.633(R)|      FAST  |clk_BUFGP         |   0.000|
+segment5<1> |        10.265(R)|      SLOW  |         3.737(R)|      FAST  |clk_BUFGP         |   0.000|
+segment5<2> |        10.438(R)|      SLOW  |         3.867(R)|      FAST  |clk_BUFGP         |   0.000|
+segment5<3> |        10.515(R)|      SLOW  |         3.966(R)|      FAST  |clk_BUFGP         |   0.000|
+segment5<4> |        10.440(R)|      SLOW  |         3.728(R)|      FAST  |clk_BUFGP         |   0.000|
+segment5<5> |         9.959(R)|      SLOW  |         3.926(R)|      FAST  |clk_BUFGP         |   0.000|
+segment5<6> |        10.394(R)|      SLOW  |         3.758(R)|      FAST  |clk_BUFGP         |   0.000|
+segment6<0> |        10.719(R)|      SLOW  |         3.846(R)|      FAST  |clk_BUFGP         |   0.000|
+segment6<1> |        10.776(R)|      SLOW  |         3.829(R)|      FAST  |clk_BUFGP         |   0.000|
+segment6<2> |        10.846(R)|      SLOW  |         3.986(R)|      FAST  |clk_BUFGP         |   0.000|
+segment6<3> |        10.783(R)|      SLOW  |         3.829(R)|      FAST  |clk_BUFGP         |   0.000|
+segment6<4> |        11.239(R)|      SLOW  |         4.239(R)|      FAST  |clk_BUFGP         |   0.000|
+segment6<5> |        10.729(R)|      SLOW  |         3.873(R)|      FAST  |clk_BUFGP         |   0.000|
+segment6<6> |        11.200(R)|      SLOW  |         4.145(R)|      FAST  |clk_BUFGP         |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock push_switch1 to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+led1_red    |        10.140(R)|      SLOW  |         4.114(R)|      FAST  |push_switch1_BUFGP|   0.000|
+led2_yellow |         9.808(R)|      SLOW  |         3.952(R)|      FAST  |push_switch1_BUFGP|   0.000|
+led3_green  |        11.037(R)|      SLOW  |         4.519(R)|      FAST  |push_switch1_BUFGP|   0.000|
+led4_red    |        10.441(R)|      SLOW  |         4.166(R)|      FAST  |push_switch1_BUFGP|   0.000|
+led5_yellow |        10.563(R)|      SLOW  |         4.308(R)|      FAST  |push_switch1_BUFGP|   0.000|
+led6_green  |        10.293(R)|      SLOW  |         4.117(R)|      FAST  |push_switch1_BUFGP|   0.000|
+segment1<0> |        10.559(R)|      SLOW  |         4.321(R)|      FAST  |push_switch1_BUFGP|   0.000|
+segment1<1> |        10.565(R)|      SLOW  |         4.366(R)|      FAST  |push_switch1_BUFGP|   0.000|
+segment1<2> |        10.863(R)|      SLOW  |         4.494(R)|      FAST  |push_switch1_BUFGP|   0.000|
+segment1<3> |         9.900(R)|      SLOW  |         3.984(R)|      FAST  |push_switch1_BUFGP|   0.000|
+segment1<4> |        10.639(R)|      SLOW  |         4.415(R)|      FAST  |push_switch1_BUFGP|   0.000|
+segment1<5> |        10.884(R)|      SLOW  |         4.496(R)|      FAST  |push_switch1_BUFGP|   0.000|
+segment1<6> |        10.196(R)|      SLOW  |         4.127(R)|      FAST  |push_switch1_BUFGP|   0.000|
+segment2<0> |        10.595(R)|      SLOW  |         4.391(R)|      FAST  |push_switch1_BUFGP|   0.000|
+segment2<1> |        10.186(R)|      SLOW  |         4.104(R)|      FAST  |push_switch1_BUFGP|   0.000|
+segment2<2> |        10.504(R)|      SLOW  |         4.234(R)|      FAST  |push_switch1_BUFGP|   0.000|
+segment2<3> |        10.308(R)|      SLOW  |         4.162(R)|      FAST  |push_switch1_BUFGP|   0.000|
+segment2<4> |        10.525(R)|      SLOW  |         4.232(R)|      FAST  |push_switch1_BUFGP|   0.000|
+segment2<5> |        10.688(R)|      SLOW  |         4.347(R)|      FAST  |push_switch1_BUFGP|   0.000|
+segment2<6> |        10.732(R)|      SLOW  |         4.326(R)|      FAST  |push_switch1_BUFGP|   0.000|
+segment3<0> |         9.377(R)|      SLOW  |         3.693(R)|      FAST  |push_switch1_BUFGP|   0.000|
+segment3<1> |         9.398(R)|      SLOW  |         3.674(R)|      FAST  |push_switch1_BUFGP|   0.000|
+segment3<2> |         9.493(R)|      SLOW  |         3.762(R)|      FAST  |push_switch1_BUFGP|   0.000|
+segment3<3> |         9.549(R)|      SLOW  |         3.809(R)|      FAST  |push_switch1_BUFGP|   0.000|
+segment3<4> |         9.526(R)|      SLOW  |         3.755(R)|      FAST  |push_switch1_BUFGP|   0.000|
+segment3<5> |         9.786(R)|      SLOW  |         3.834(R)|      FAST  |push_switch1_BUFGP|   0.000|
+segment3<6> |         9.658(R)|      SLOW  |         3.862(R)|      FAST  |push_switch1_BUFGP|   0.000|
+segment4<0> |         9.699(R)|      SLOW  |         3.884(R)|      FAST  |push_switch1_BUFGP|   0.000|
+segment4<1> |         9.869(R)|      SLOW  |         3.875(R)|      FAST  |push_switch1_BUFGP|   0.000|
+segment4<2> |        10.048(R)|      SLOW  |         3.949(R)|      FAST  |push_switch1_BUFGP|   0.000|
+segment4<3> |         9.972(R)|      SLOW  |         4.006(R)|      FAST  |push_switch1_BUFGP|   0.000|
+segment4<4> |         9.921(R)|      SLOW  |         3.926(R)|      FAST  |push_switch1_BUFGP|   0.000|
+segment4<5> |         9.835(R)|      SLOW  |         3.915(R)|      FAST  |push_switch1_BUFGP|   0.000|
+segment4<6> |         9.977(R)|      SLOW  |         3.925(R)|      FAST  |push_switch1_BUFGP|   0.000|
+segment5<0> |         9.580(R)|      SLOW  |         3.820(R)|      FAST  |push_switch1_BUFGP|   0.000|
+segment5<1> |         9.851(R)|      SLOW  |         3.933(R)|      FAST  |push_switch1_BUFGP|   0.000|
+segment5<2> |        10.106(R)|      SLOW  |         4.010(R)|      FAST  |push_switch1_BUFGP|   0.000|
+segment5<3> |        10.139(R)|      SLOW  |         4.044(R)|      FAST  |push_switch1_BUFGP|   0.000|
+segment5<4> |        10.268(R)|      SLOW  |         4.087(R)|      FAST  |push_switch1_BUFGP|   0.000|
+segment5<5> |         9.691(R)|      SLOW  |         3.815(R)|      FAST  |push_switch1_BUFGP|   0.000|
+segment5<6> |        10.011(R)|      SLOW  |         3.956(R)|      FAST  |push_switch1_BUFGP|   0.000|
+segment6<0> |         9.885(R)|      SLOW  |         3.916(R)|      FAST  |push_switch1_BUFGP|   0.000|
+segment6<1> |         9.643(R)|      SLOW  |         3.842(R)|      FAST  |push_switch1_BUFGP|   0.000|
+segment6<2> |         9.884(R)|      SLOW  |         3.946(R)|      FAST  |push_switch1_BUFGP|   0.000|
+segment6<3> |         9.846(R)|      SLOW  |         3.954(R)|      FAST  |push_switch1_BUFGP|   0.000|
+segment6<4> |        10.321(R)|      SLOW  |         4.176(R)|      FAST  |push_switch1_BUFGP|   0.000|
+segment6<5> |        10.171(R)|      SLOW  |         4.041(R)|      FAST  |push_switch1_BUFGP|   0.000|
+segment6<6> |        10.428(R)|      SLOW  |         4.211(R)|      FAST  |push_switch1_BUFGP|   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    7.471|         |         |         |
+push_switch1   |    3.192|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock push_switch1
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+push_switch1   |    0.931|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Sun Dec 18 11:31:01 2022 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 768 MB
+
+
+

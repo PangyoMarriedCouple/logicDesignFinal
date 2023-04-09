@@ -1,0 +1,3 @@
+verilog work "stopwatch.v"
+verilog work "calendar.v"
+verilog work "modeControl.v"

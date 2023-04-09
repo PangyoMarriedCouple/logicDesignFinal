@@ -1,0 +1,188 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v 3 -s 4 -n
+3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf
+
+Design file:              top.ncd
+Physical constraint file: top.pcf
+Device,package,speed:     xc3s50an,tqg144,-4 (PRODUCTION 1.42 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock clk
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+push_switch3|   22.881(R)|   -1.320(R)|clk_BUFGP         |   0.000|
+push_switch4|   18.632(R)|   -1.712(R)|clk_BUFGP         |   0.000|
+push_switch6|   20.713(R)|   -0.496(R)|clk_BUFGP         |   0.000|
+------------+------------+------------+------------------+--------+
+
+Clock clk to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+segment1<0> |    8.913(R)|clk_BUFGP         |   0.000|
+segment1<1> |    9.375(R)|clk_BUFGP         |   0.000|
+segment1<2> |    9.093(R)|clk_BUFGP         |   0.000|
+segment1<3> |    8.949(R)|clk_BUFGP         |   0.000|
+segment1<4> |    9.325(R)|clk_BUFGP         |   0.000|
+segment1<5> |    8.962(R)|clk_BUFGP         |   0.000|
+segment1<6> |    9.440(R)|clk_BUFGP         |   0.000|
+segment2<0> |    9.239(R)|clk_BUFGP         |   0.000|
+segment2<1> |    9.531(R)|clk_BUFGP         |   0.000|
+segment2<2> |    9.116(R)|clk_BUFGP         |   0.000|
+segment2<3> |    9.205(R)|clk_BUFGP         |   0.000|
+segment2<4> |    8.899(R)|clk_BUFGP         |   0.000|
+segment2<5> |    9.277(R)|clk_BUFGP         |   0.000|
+segment2<6> |    9.930(R)|clk_BUFGP         |   0.000|
+segment3<0> |    9.697(R)|clk_BUFGP         |   0.000|
+segment3<1> |    8.764(R)|clk_BUFGP         |   0.000|
+segment3<2> |    8.628(R)|clk_BUFGP         |   0.000|
+segment3<3> |    9.505(R)|clk_BUFGP         |   0.000|
+segment3<4> |    9.216(R)|clk_BUFGP         |   0.000|
+segment3<5> |    8.638(R)|clk_BUFGP         |   0.000|
+segment3<6> |    9.781(R)|clk_BUFGP         |   0.000|
+segment4<0> |    8.698(R)|clk_BUFGP         |   0.000|
+segment4<1> |    8.734(R)|clk_BUFGP         |   0.000|
+segment4<2> |    8.199(R)|clk_BUFGP         |   0.000|
+segment4<3> |    9.470(R)|clk_BUFGP         |   0.000|
+segment4<4> |    8.728(R)|clk_BUFGP         |   0.000|
+segment4<5> |    8.544(R)|clk_BUFGP         |   0.000|
+segment4<6> |    9.165(R)|clk_BUFGP         |   0.000|
+segment5<0> |    8.780(R)|clk_BUFGP         |   0.000|
+segment5<1> |    8.440(R)|clk_BUFGP         |   0.000|
+segment5<2> |    9.313(R)|clk_BUFGP         |   0.000|
+segment5<3> |    8.828(R)|clk_BUFGP         |   0.000|
+segment5<4> |    8.454(R)|clk_BUFGP         |   0.000|
+segment5<5> |    8.545(R)|clk_BUFGP         |   0.000|
+segment5<6> |    9.079(R)|clk_BUFGP         |   0.000|
+segment6<0> |    7.888(R)|clk_BUFGP         |   0.000|
+segment6<1> |    8.236(R)|clk_BUFGP         |   0.000|
+segment6<2> |    8.497(R)|clk_BUFGP         |   0.000|
+segment6<3> |    8.412(R)|clk_BUFGP         |   0.000|
+segment6<4> |    8.822(R)|clk_BUFGP         |   0.000|
+segment6<5> |    8.940(R)|clk_BUFGP         |   0.000|
+segment6<6> |    9.431(R)|clk_BUFGP         |   0.000|
+------------+------------+------------------+--------+
+
+Clock push_switch1 to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+segment1<0> |    9.437(R)|push_switch1_BUFGP|   0.000|
+segment1<1> |   11.311(R)|push_switch1_BUFGP|   0.000|
+segment1<2> |    9.377(R)|push_switch1_BUFGP|   0.000|
+segment1<3> |    8.939(R)|push_switch1_BUFGP|   0.000|
+segment1<4> |    9.228(R)|push_switch1_BUFGP|   0.000|
+segment1<5> |    9.518(R)|push_switch1_BUFGP|   0.000|
+segment1<6> |   11.254(R)|push_switch1_BUFGP|   0.000|
+segment2<0> |   12.138(R)|push_switch1_BUFGP|   0.000|
+segment2<1> |    9.320(R)|push_switch1_BUFGP|   0.000|
+segment2<2> |   10.310(R)|push_switch1_BUFGP|   0.000|
+segment2<3> |   10.799(R)|push_switch1_BUFGP|   0.000|
+segment2<4> |   11.887(R)|push_switch1_BUFGP|   0.000|
+segment2<5> |   11.828(R)|push_switch1_BUFGP|   0.000|
+segment2<6> |   10.214(R)|push_switch1_BUFGP|   0.000|
+segment3<0> |   11.549(R)|push_switch1_BUFGP|   0.000|
+segment3<1> |   10.251(R)|push_switch1_BUFGP|   0.000|
+segment3<2> |   10.214(R)|push_switch1_BUFGP|   0.000|
+segment3<3> |   10.715(R)|push_switch1_BUFGP|   0.000|
+segment3<4> |   11.603(R)|push_switch1_BUFGP|   0.000|
+segment3<5> |   11.474(R)|push_switch1_BUFGP|   0.000|
+segment3<6> |   10.991(R)|push_switch1_BUFGP|   0.000|
+segment4<0> |   10.609(R)|push_switch1_BUFGP|   0.000|
+segment4<1> |   11.088(R)|push_switch1_BUFGP|   0.000|
+segment4<2> |   10.589(R)|push_switch1_BUFGP|   0.000|
+segment4<3> |   11.561(R)|push_switch1_BUFGP|   0.000|
+segment4<4> |   11.574(R)|push_switch1_BUFGP|   0.000|
+segment4<5> |   11.446(R)|push_switch1_BUFGP|   0.000|
+segment4<6> |   11.498(R)|push_switch1_BUFGP|   0.000|
+segment5<0> |   11.170(R)|push_switch1_BUFGP|   0.000|
+segment5<1> |   11.304(R)|push_switch1_BUFGP|   0.000|
+segment5<2> |   12.275(R)|push_switch1_BUFGP|   0.000|
+segment5<3> |   11.993(R)|push_switch1_BUFGP|   0.000|
+segment5<4> |   12.027(R)|push_switch1_BUFGP|   0.000|
+segment5<5> |   12.322(R)|push_switch1_BUFGP|   0.000|
+segment5<6> |   12.244(R)|push_switch1_BUFGP|   0.000|
+segment6<0> |   12.099(R)|push_switch1_BUFGP|   0.000|
+segment6<1> |   11.455(R)|push_switch1_BUFGP|   0.000|
+segment6<2> |   12.380(R)|push_switch1_BUFGP|   0.000|
+segment6<3> |   12.671(R)|push_switch1_BUFGP|   0.000|
+segment6<4> |   12.204(R)|push_switch1_BUFGP|   0.000|
+segment6<5> |   12.396(R)|push_switch1_BUFGP|   0.000|
+segment6<6> |   10.263(R)|push_switch1_BUFGP|   0.000|
+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |   19.972|         |         |         |
+push_switch1   |   23.013|         |         |         |
+push_switch2   |   23.141|   20.653|         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock push_switch1
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+push_switch1   |    1.687|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock push_switch2
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    1.815|         |         |         |
+push_switch1   |    5.654|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Sun Dec 18 11:50:11 2022 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 371 MB
+
+
+

@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "/home/ise/XilinxFolder/calendarStopwatch/modeControl.xst" -ofn "/home/ise/XilinxFolder/calendarStopwatch/modeControl.syr" 
+xst -intstyle ise -ifn "/home/ise/XilinxFolder/calendarStopwatch/modeControl.xst" -ofn "/home/ise/XilinxFolder/calendarStopwatch/modeControl.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc final.ucf -p xa7a100t-csg324-2I modeControl.ngc modeControl.ngd  
+map -intstyle ise -p xa7a100t-csg324-2I -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o modeControl_map.ncd modeControl.ngd modeControl.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc calendarUCF.ucf -p xa7a100t-csg324-2I modeControl.ngc modeControl.ngd  
+map -intstyle ise -p xa7a100t-csg324-2I -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o modeControl_map.ncd modeControl.ngd modeControl.pcf 

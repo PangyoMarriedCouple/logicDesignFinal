@@ -1,0 +1,42 @@
+%Warning-WIDTH: ../..//stopwatch.v:180: Operator ASSIGN expects 4 bits on the Assign RHS, but Assign RHS's SUB generates 32 or 7 bits.
+%Warning-WIDTH: Use "/* verilator lint_off WIDTH */" and lint_on around source to disable this message.
+%Warning-WIDTH: ../..//stopwatch.v:185: Operator ASSIGN expects 4 bits on the Assign RHS, but Assign RHS's SUB generates 32 or 7 bits.
+%Warning-WIDTH: ../..//stopwatch.v:190: Operator ASSIGN expects 4 bits on the Assign RHS, but Assign RHS's SUB generates 32 or 7 bits.
+%Warning-WIDTH: ../..//stopwatch.v:195: Operator ASSIGN expects 4 bits on the Assign RHS, but Assign RHS's SUB generates 32 or 7 bits.
+%Warning-WIDTH: ../..//stopwatch.v:200: Operator ASSIGN expects 4 bits on the Assign RHS, but Assign RHS's SUB generates 32 or 7 bits.
+%Warning-WIDTH: ../..//stopwatch.v:205: Operator ASSIGN expects 4 bits on the Assign RHS, but Assign RHS's VARREF 'm' generates 7 bits.
+%Warning-WIDTH: ../..//stopwatch.v:214: Operator ASSIGN expects 4 bits on the Assign RHS, but Assign RHS's SUB generates 32 or 7 bits.
+%Warning-WIDTH: ../..//stopwatch.v:219: Operator ASSIGN expects 4 bits on the Assign RHS, but Assign RHS's SUB generates 32 or 7 bits.
+%Warning-WIDTH: ../..//stopwatch.v:224: Operator ASSIGN expects 4 bits on the Assign RHS, but Assign RHS's SUB generates 32 or 7 bits.
+%Warning-WIDTH: ../..//stopwatch.v:229: Operator ASSIGN expects 4 bits on the Assign RHS, but Assign RHS's SUB generates 32 or 7 bits.
+%Warning-WIDTH: ../..//stopwatch.v:234: Operator ASSIGN expects 4 bits on the Assign RHS, but Assign RHS's SUB generates 32 or 7 bits.
+%Warning-WIDTH: ../..//stopwatch.v:239: Operator ASSIGN expects 4 bits on the Assign RHS, but Assign RHS's VARREF 'sec' generates 7 bits.
+%Warning-WIDTH: ../..//stopwatch.v:250: Operator ASSIGN expects 4 bits on the Assign RHS, but Assign RHS's SUB generates 32 or 7 bits.
+%Warning-WIDTH: ../..//stopwatch.v:255: Operator ASSIGN expects 4 bits on the Assign RHS, but Assign RHS's SUB generates 32 or 7 bits.
+%Warning-WIDTH: ../..//stopwatch.v:260: Operator ASSIGN expects 4 bits on the Assign RHS, but Assign RHS's SUB generates 32 or 7 bits.
+%Warning-WIDTH: ../..//stopwatch.v:265: Operator ASSIGN expects 4 bits on the Assign RHS, but Assign RHS's SUB generates 32 or 7 bits.
+%Warning-WIDTH: ../..//stopwatch.v:270: Operator ASSIGN expects 4 bits on the Assign RHS, but Assign RHS's SUB generates 32 or 7 bits.
+%Warning-WIDTH: ../..//stopwatch.v:275: Operator ASSIGN expects 4 bits on the Assign RHS, but Assign RHS's SUB generates 32 or 7 bits.
+%Warning-WIDTH: ../..//stopwatch.v:280: Operator ASSIGN expects 4 bits on the Assign RHS, but Assign RHS's SUB generates 32 or 7 bits.
+%Warning-WIDTH: ../..//stopwatch.v:285: Operator ASSIGN expects 4 bits on the Assign RHS, but Assign RHS's SUB generates 32 or 7 bits.
+%Warning-WIDTH: ../..//stopwatch.v:290: Operator ASSIGN expects 4 bits on the Assign RHS, but Assign RHS's SUB generates 32 or 7 bits.
+%Warning-WIDTH: ../..//stopwatch.v:295: Operator ASSIGN expects 4 bits on the Assign RHS, but Assign RHS's VARREF 'msec' generates 7 bits.
+%Warning-WIDTH: ../..//calendar.v:383: Operator ASSIGN expects 4 bits on the Assign RHS, but Assign RHS's SUB generates 32 or 7 bits.
+%Warning-WIDTH: ../..//calendar.v:388: Operator ASSIGN expects 4 bits on the Assign RHS, but Assign RHS's SUB generates 32 or 7 bits.
+%Warning-WIDTH: ../..//calendar.v:393: Operator ASSIGN expects 4 bits on the Assign RHS, but Assign RHS's SUB generates 32 or 7 bits.
+%Warning-WIDTH: ../..//calendar.v:398: Operator ASSIGN expects 4 bits on the Assign RHS, but Assign RHS's SUB generates 32 or 7 bits.
+%Warning-WIDTH: ../..//calendar.v:403: Operator ASSIGN expects 4 bits on the Assign RHS, but Assign RHS's SUB generates 32 or 7 bits.
+%Warning-WIDTH: ../..//calendar.v:408: Operator ASSIGN expects 4 bits on the Assign RHS, but Assign RHS's SUB generates 32 or 7 bits.
+%Warning-WIDTH: ../..//calendar.v:413: Operator ASSIGN expects 4 bits on the Assign RHS, but Assign RHS's SUB generates 32 or 7 bits.
+%Warning-WIDTH: ../..//calendar.v:418: Operator ASSIGN expects 4 bits on the Assign RHS, but Assign RHS's SUB generates 32 or 7 bits.
+%Warning-WIDTH: ../..//calendar.v:423: Operator ASSIGN expects 4 bits on the Assign RHS, but Assign RHS's SUB generates 32 or 7 bits.
+%Warning-WIDTH: ../..//calendar.v:428: Operator ASSIGN expects 4 bits on the Assign RHS, but Assign RHS's VARREF 'y' generates 7 bits.
+%Warning-WIDTH: ../..//calendar.v:448: Operator ASSIGN expects 4 bits on the Assign RHS, but Assign RHS's SUB generates 32 or 6 bits.
+%Warning-WIDTH: ../..//calendar.v:453: Operator ASSIGN expects 4 bits on the Assign RHS, but Assign RHS's SUB generates 32 or 6 bits.
+%Warning-WIDTH: ../..//calendar.v:458: Operator ASSIGN expects 4 bits on the Assign RHS, but Assign RHS's SUB generates 32 or 6 bits.
+%Warning-WIDTH: ../..//calendar.v:463: Operator ASSIGN expects 4 bits on the Assign RHS, but Assign RHS's VARREF 'day' generates 6 bits.
+%Warning-WIDTH: ../..//calendar.v:496: Operator CASE expects 4 bits on the Case expression, but Case expression's VARREF 'm1' generates 1 bits.
+%Warning-UNSIGNED: ../..//calendar.v:290: Comparison is constant due to unsigned arithmetic
+%Warning-UNSIGNED: ../..//calendar.v:369: Comparison is constant due to unsigned arithmetic
+%Error: Exiting due to 39 warning(s)
+%Error: Command Failed /home/ise/XilinxFolder/calendarStopwatch/SNU-BoardSim/verilator/bin/verilator_bin --cc ../../top.v -I../../ --exe sim.cpp

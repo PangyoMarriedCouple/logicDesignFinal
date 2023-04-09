@@ -1,0 +1,975 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> 
+Reading design: top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "top.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "top"
+Output Format                      : NGC
+Target Device                      : xa7a100t-2I-csg324
+
+---- Source Options
+Top Module Name                    : top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "/home/ise/XilinxFolder/calendarStopwatch/stopwatch.v" into library work
+Parsing module <stopwatch>.
+Analyzing Verilog file "/home/ise/XilinxFolder/calendarStopwatch/calendar.v" into library work
+Parsing module <calendar>.
+Analyzing Verilog file "/home/ise/XilinxFolder/calendarStopwatch/modeControl.v" into library work
+Parsing module <modeControl>.
+Analyzing Verilog file "/home/ise/XilinxFolder/calendarStopwatch/top.v" into library work
+Parsing module <top>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <top>.
+
+Elaborating module <modeControl>.
+
+Elaborating module <calendar>.
+WARNING:HDLCompiler:413 - "/home/ise/XilinxFolder/calendarStopwatch/calendar.v" Line 142: Result of 28-bit expression is truncated to fit in 27-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/XilinxFolder/calendarStopwatch/calendar.v" Line 150: Result of 8-bit expression is truncated to fit in 7-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/XilinxFolder/calendarStopwatch/calendar.v" Line 162: Result of 32-bit expression is truncated to fit in 7-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/XilinxFolder/calendarStopwatch/calendar.v" Line 188: Result of 28-bit expression is truncated to fit in 27-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/XilinxFolder/calendarStopwatch/calendar.v" Line 195: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/XilinxFolder/calendarStopwatch/calendar.v" Line 201: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/XilinxFolder/calendarStopwatch/calendar.v" Line 224: Result of 28-bit expression is truncated to fit in 27-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/XilinxFolder/calendarStopwatch/calendar.v" Line 231: Result of 7-bit expression is truncated to fit in 6-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/XilinxFolder/calendarStopwatch/calendar.v" Line 237: Result of 32-bit expression is truncated to fit in 6-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/XilinxFolder/calendarStopwatch/calendar.v" Line 260: Result of 28-bit expression is truncated to fit in 27-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/XilinxFolder/calendarStopwatch/calendar.v" Line 267: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/XilinxFolder/calendarStopwatch/calendar.v" Line 273: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/XilinxFolder/calendarStopwatch/calendar.v" Line 383: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/XilinxFolder/calendarStopwatch/calendar.v" Line 388: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/XilinxFolder/calendarStopwatch/calendar.v" Line 393: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/XilinxFolder/calendarStopwatch/calendar.v" Line 398: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/XilinxFolder/calendarStopwatch/calendar.v" Line 403: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/XilinxFolder/calendarStopwatch/calendar.v" Line 408: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/XilinxFolder/calendarStopwatch/calendar.v" Line 413: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/XilinxFolder/calendarStopwatch/calendar.v" Line 418: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/XilinxFolder/calendarStopwatch/calendar.v" Line 423: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/XilinxFolder/calendarStopwatch/calendar.v" Line 428: Result of 7-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/XilinxFolder/calendarStopwatch/calendar.v" Line 436: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/XilinxFolder/calendarStopwatch/calendar.v" Line 448: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/XilinxFolder/calendarStopwatch/calendar.v" Line 453: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/XilinxFolder/calendarStopwatch/calendar.v" Line 458: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/XilinxFolder/calendarStopwatch/calendar.v" Line 463: Result of 6-bit expression is truncated to fit in 4-bit target.
+
+Elaborating module <stopwatch>.
+WARNING:HDLCompiler:413 - "/home/ise/XilinxFolder/calendarStopwatch/stopwatch.v" Line 137: Result of 28-bit expression is truncated to fit in 27-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/XilinxFolder/calendarStopwatch/stopwatch.v" Line 142: Result of 8-bit expression is truncated to fit in 7-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/XilinxFolder/calendarStopwatch/stopwatch.v" Line 153: Result of 8-bit expression is truncated to fit in 7-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/XilinxFolder/calendarStopwatch/stopwatch.v" Line 162: Result of 8-bit expression is truncated to fit in 7-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/XilinxFolder/calendarStopwatch/stopwatch.v" Line 180: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/XilinxFolder/calendarStopwatch/stopwatch.v" Line 185: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/XilinxFolder/calendarStopwatch/stopwatch.v" Line 190: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/XilinxFolder/calendarStopwatch/stopwatch.v" Line 195: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/XilinxFolder/calendarStopwatch/stopwatch.v" Line 200: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/XilinxFolder/calendarStopwatch/stopwatch.v" Line 205: Result of 7-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/XilinxFolder/calendarStopwatch/stopwatch.v" Line 214: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/XilinxFolder/calendarStopwatch/stopwatch.v" Line 219: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/XilinxFolder/calendarStopwatch/stopwatch.v" Line 224: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/XilinxFolder/calendarStopwatch/stopwatch.v" Line 229: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/XilinxFolder/calendarStopwatch/stopwatch.v" Line 234: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/XilinxFolder/calendarStopwatch/stopwatch.v" Line 239: Result of 7-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/XilinxFolder/calendarStopwatch/stopwatch.v" Line 250: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/XilinxFolder/calendarStopwatch/stopwatch.v" Line 255: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/XilinxFolder/calendarStopwatch/stopwatch.v" Line 260: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/XilinxFolder/calendarStopwatch/stopwatch.v" Line 265: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/XilinxFolder/calendarStopwatch/stopwatch.v" Line 270: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/XilinxFolder/calendarStopwatch/stopwatch.v" Line 275: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/XilinxFolder/calendarStopwatch/stopwatch.v" Line 280: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/XilinxFolder/calendarStopwatch/stopwatch.v" Line 285: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/XilinxFolder/calendarStopwatch/stopwatch.v" Line 290: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/XilinxFolder/calendarStopwatch/stopwatch.v" Line 295: Result of 7-bit expression is truncated to fit in 4-bit target.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <top>.
+    Related source file is "/home/ise/XilinxFolder/calendarStopwatch/top.v".
+WARNING:Xst:647 - Input <push_switch5> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <dip_switch1> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <dip_switch2> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <dip_switch3> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <dip_switch4> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <dip_switch5> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <dip_switch6> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <dip_switch7> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <dip_switch8> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <dip_switch9> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <dip_switch10> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <top> synthesized.
+
+Synthesizing Unit <modeControl>.
+    Related source file is "/home/ise/XilinxFolder/calendarStopwatch/modeControl.v".
+    Found 3-bit register for signal <isUsing>.
+    Found finite state machine <FSM_0> for signal <isUsing>.
+    -----------------------------------------------------------------------
+    | States             | 2                                              |
+    | Transitions        | 2                                              |
+    | Inputs             | 1                                              |
+    | Outputs            | 4                                              |
+    | Clock              | mode (rising_edge)                             |
+    | Power Up State     | 001                                            |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred  12 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <modeControl> synthesized.
+
+Synthesizing Unit <calendar>.
+    Related source file is "/home/ise/XilinxFolder/calendarStopwatch/calendar.v".
+        secfreq = 2000000
+        buttonfreq = 40000
+    Found 4-bit register for signal <m>.
+    Found 6-bit register for signal <day>.
+    Found 4-bit register for signal <yoil>.
+    Found 3-bit register for signal <setStatus>.
+    Found 27-bit register for signal <counter1>.
+    Found 7-bit register for signal <d1>.
+    Found 7-bit register for signal <d2>.
+    Found 7-bit register for signal <d3>.
+    Found 7-bit register for signal <d4>.
+    Found 7-bit register for signal <d5>.
+    Found 7-bit register for signal <d6>.
+    Found 6-bit register for signal <led6bit>.
+    Found 1-bit register for signal <led1>.
+    Found 1-bit register for signal <led2>.
+    Found 1-bit register for signal <led3>.
+    Found 1-bit register for signal <led4>.
+    Found 1-bit register for signal <led5>.
+    Found 1-bit register for signal <led6>.
+    Found 7-bit register for signal <y>.
+    Found finite state machine <FSM_1> for signal <setStatus>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 15                                             |
+    | Inputs             | 2                                              |
+    | Outputs            | 3                                              |
+    | Clock              | clkBoard (rising_edge)                         |
+    | Power Up State     | 000                                            |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 7-bit adder for signal <y[6]_GND_3_o_add_15_OUT> created at line 150.
+    Found 4-bit adder for signal <m[3]_GND_3_o_add_28_OUT> created at line 195.
+    Found 6-bit adder for signal <day[5]_GND_3_o_add_39_OUT> created at line 231.
+    Found 27-bit adder for signal <counter1[26]_GND_3_o_add_49_OUT> created at line 260.
+    Found 4-bit adder for signal <yoil[3]_GND_3_o_add_50_OUT> created at line 267.
+    Found 7-bit subtractor for signal <GND_3_o_GND_3_o_sub_19_OUT<6:0>> created at line 162.
+    Found 4-bit subtractor for signal <GND_3_o_GND_3_o_sub_31_OUT<3:0>> created at line 201.
+    Found 6-bit subtractor for signal <GND_3_o_GND_3_o_sub_42_OUT<5:0>> created at line 237.
+    Found 4-bit subtractor for signal <GND_3_o_GND_3_o_sub_53_OUT<3:0>> created at line 273.
+    Found 4-bit subtractor for signal <GND_3_o_GND_3_o_sub_115_OUT<3:0>> created at line 423.
+    Found 4-bit subtractor for signal <GND_3_o_GND_3_o_sub_103_OUT<3:0>> created at line 393.
+    Found 4-bit subtractor for signal <GND_3_o_GND_3_o_sub_105_OUT<3:0>> created at line 398.
+    Found 4-bit subtractor for signal <GND_3_o_GND_3_o_sub_107_OUT<3:0>> created at line 403.
+    Found 4-bit subtractor for signal <GND_3_o_GND_3_o_sub_109_OUT<3:0>> created at line 408.
+    Found 4-bit subtractor for signal <GND_3_o_GND_3_o_sub_111_OUT<3:0>> created at line 413.
+    Found 4-bit subtractor for signal <GND_3_o_GND_3_o_sub_113_OUT<3:0>> created at line 418.
+    Found 4-bit subtractor for signal <GND_3_o_GND_3_o_sub_135_OUT<3:0>> created at line 436.
+    Found 4-bit subtractor for signal <GND_3_o_GND_3_o_sub_138_OUT<3:0>> created at line 448.
+    Found 4-bit subtractor for signal <GND_3_o_GND_3_o_sub_140_OUT<3:0>> created at line 453.
+    Found 4-bit subtractor for signal <GND_3_o_GND_3_o_sub_142_OUT<3:0>> created at line 458.
+    Found 16x7-bit Read Only RAM for signal <GND_3_o_GND_3_o_wide_mux_148_OUT>
+    Found 16x7-bit Read Only RAM for signal <setStatus[2]_GND_3_o_wide_mux_149_OUT>
+    Found 16x7-bit Read Only RAM for signal <setStatus[2]_GND_3_o_wide_mux_151_OUT>
+    Found 16x7-bit Read Only RAM for signal <setStatus[2]_GND_3_o_wide_mux_158_OUT>
+    Found 4x7-bit Read Only RAM for signal <_n0451>
+    Found 27-bit comparator greater for signal <counter1[26]_GND_3_o_LessThan_14_o> created at line 140
+    Found 7-bit comparator greater for signal <PWR_3_o_setStatus[2]_LessThan_63_o> created at line 284
+    Found 4-bit comparator greater for signal <PWR_3_o_setStatus[2]_LessThan_65_o> created at line 298
+    Found 4-bit comparator greater for signal <setStatus[2]_GND_3_o_LessThan_67_o> created at line 304
+    Found 6-bit comparator greater for signal <GND_3_o_setStatus[2]_LessThan_76_o> created at line 316
+    Found 6-bit comparator greater for signal <setStatus[2]_GND_3_o_LessThan_78_o> created at line 321
+    Found 6-bit comparator greater for signal <GND_3_o_setStatus[2]_LessThan_85_o> created at line 332
+    Found 6-bit comparator greater for signal <setStatus[2]_GND_3_o_LessThan_87_o> created at line 337
+    Found 6-bit comparator greater for signal <GND_3_o_setStatus[2]_LessThan_91_o> created at line 348
+    Found 6-bit comparator greater for signal <setStatus[2]_GND_3_o_LessThan_93_o> created at line 353
+    Found 4-bit comparator greater for signal <GND_3_o_setStatus[2]_LessThan_96_o> created at line 363
+    Found 7-bit comparator greater for signal <PWR_3_o_setStatus[2]_LessThan_98_o> created at line 380
+    Found 7-bit comparator greater for signal <PWR_3_o_setStatus[2]_LessThan_100_o> created at line 385
+    Found 7-bit comparator greater for signal <PWR_3_o_setStatus[2]_LessThan_102_o> created at line 390
+    Found 7-bit comparator greater for signal <GND_3_o_setStatus[2]_LessThan_104_o> created at line 395
+    Found 7-bit comparator greater for signal <GND_3_o_setStatus[2]_LessThan_106_o> created at line 400
+    Found 7-bit comparator greater for signal <GND_3_o_setStatus[2]_LessThan_108_o> created at line 405
+    Found 7-bit comparator greater for signal <GND_3_o_setStatus[2]_LessThan_110_o> created at line 410
+    Found 7-bit comparator greater for signal <GND_3_o_setStatus[2]_LessThan_112_o> created at line 415
+    Found 7-bit comparator greater for signal <GND_3_o_setStatus[2]_LessThan_114_o> created at line 420
+    Found 4-bit comparator greater for signal <PWR_3_o_setStatus[2]_LessThan_134_o> created at line 433
+    Found 6-bit comparator greater for signal <GND_3_o_setStatus[2]_LessThan_137_o> created at line 445
+    Found 6-bit comparator greater for signal <GND_3_o_setStatus[2]_LessThan_139_o> created at line 450
+    Found 6-bit comparator greater for signal <GND_3_o_setStatus[2]_LessThan_141_o> created at line 455
+    Summary:
+	inferred   5 RAM(s).
+	inferred  18 Adder/Subtractor(s).
+	inferred 102 D-type flip-flop(s).
+	inferred  24 Comparator(s).
+	inferred  80 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <calendar> synthesized.
+
+Synthesizing Unit <stopwatch>.
+    Related source file is "/home/ise/XilinxFolder/calendarStopwatch/stopwatch.v".
+        secfreq = 2000000
+        buttonfreq = 40000
+WARNING:Xst:647 - Input <down> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 7-bit register for signal <sec>.
+    Found 7-bit register for signal <msec>.
+    Found 1-bit register for signal <isrunning>.
+    Found 27-bit register for signal <counter1>.
+    Found 7-bit register for signal <d1>.
+    Found 7-bit register for signal <d2>.
+    Found 7-bit register for signal <d3>.
+    Found 7-bit register for signal <d4>.
+    Found 7-bit register for signal <d5>.
+    Found 7-bit register for signal <d6>.
+    Found 7-bit register for signal <m>.
+    Found 27-bit adder for signal <counter1[26]_GND_4_o_add_12_OUT> created at line 137.
+    Found 7-bit adder for signal <msec[6]_GND_4_o_add_13_OUT> created at line 142.
+    Found 7-bit adder for signal <isrunning_GND_4_o_add_21_OUT> created at line 153.
+    Found 7-bit adder for signal <isrunning_GND_4_o_add_26_OUT> created at line 162.
+    Found 4-bit subtractor for signal <GND_4_o_GND_4_o_sub_35_OUT<3:0>> created at line 180.
+    Found 4-bit subtractor for signal <GND_4_o_GND_4_o_sub_37_OUT<3:0>> created at line 185.
+    Found 4-bit subtractor for signal <GND_4_o_GND_4_o_sub_39_OUT<3:0>> created at line 190.
+    Found 4-bit subtractor for signal <GND_4_o_GND_4_o_sub_41_OUT<3:0>> created at line 195.
+    Found 4-bit subtractor for signal <GND_4_o_GND_4_o_sub_43_OUT<3:0>> created at line 200.
+    Found 4-bit subtractor for signal <GND_4_o_GND_4_o_sub_55_OUT<3:0>> created at line 214.
+    Found 4-bit subtractor for signal <GND_4_o_GND_4_o_sub_57_OUT<3:0>> created at line 219.
+    Found 4-bit subtractor for signal <GND_4_o_GND_4_o_sub_59_OUT<3:0>> created at line 224.
+    Found 4-bit subtractor for signal <GND_4_o_GND_4_o_sub_61_OUT<3:0>> created at line 229.
+    Found 4-bit subtractor for signal <GND_4_o_GND_4_o_sub_63_OUT<3:0>> created at line 234.
+    Found 4-bit subtractor for signal <GND_4_o_GND_4_o_sub_91_OUT<3:0>> created at line 290.
+    Found 4-bit subtractor for signal <GND_4_o_GND_4_o_sub_79_OUT<3:0>> created at line 260.
+    Found 4-bit subtractor for signal <GND_4_o_GND_4_o_sub_81_OUT<3:0>> created at line 265.
+    Found 4-bit subtractor for signal <GND_4_o_GND_4_o_sub_83_OUT<3:0>> created at line 270.
+    Found 4-bit subtractor for signal <GND_4_o_GND_4_o_sub_85_OUT<3:0>> created at line 275.
+    Found 4-bit subtractor for signal <GND_4_o_GND_4_o_sub_87_OUT<3:0>> created at line 280.
+    Found 4-bit subtractor for signal <GND_4_o_GND_4_o_sub_89_OUT<3:0>> created at line 285.
+    Found 16x7-bit Read Only RAM for signal <GND_4_o_GND_4_o_wide_mux_109_OUT>
+    Found 16x7-bit Read Only RAM for signal <isrunning_GND_4_o_wide_mux_110_OUT>
+    Found 16x7-bit Read Only RAM for signal <GND_4_o_GND_4_o_wide_mux_111_OUT>
+    Found 16x7-bit Read Only RAM for signal <isrunning_GND_4_o_wide_mux_112_OUT>
+    Found 16x7-bit Read Only RAM for signal <GND_4_o_GND_4_o_wide_mux_113_OUT>
+    Found 16x7-bit Read Only RAM for signal <isrunning_GND_4_o_wide_mux_114_OUT>
+    Found 27-bit comparator greater for signal <counter1[26]_GND_4_o_LessThan_12_o> created at line 135
+    Found 7-bit comparator greater for signal <PWR_7_o_isrunning_LessThan_21_o> created at line 150
+    Found 7-bit comparator greater for signal <GND_4_o_isrunning_LessThan_25_o> created at line 157
+    Found 7-bit comparator greater for signal <isrunning_GND_4_o_LessThan_26_o> created at line 160
+    Found 7-bit comparator greater for signal <GND_4_o_isrunning_LessThan_34_o> created at line 177
+    Found 7-bit comparator greater for signal <GND_4_o_isrunning_LessThan_36_o> created at line 182
+    Found 7-bit comparator greater for signal <GND_4_o_isrunning_LessThan_38_o> created at line 187
+    Found 7-bit comparator greater for signal <GND_4_o_isrunning_LessThan_40_o> created at line 192
+    Found 7-bit comparator greater for signal <GND_4_o_isrunning_LessThan_42_o> created at line 197
+    Found 7-bit comparator greater for signal <GND_4_o_isrunning_LessThan_54_o> created at line 211
+    Found 7-bit comparator greater for signal <GND_4_o_isrunning_LessThan_56_o> created at line 216
+    Found 7-bit comparator greater for signal <GND_4_o_isrunning_LessThan_58_o> created at line 221
+    Found 7-bit comparator greater for signal <GND_4_o_isrunning_LessThan_60_o> created at line 226
+    Found 7-bit comparator greater for signal <GND_4_o_isrunning_LessThan_62_o> created at line 231
+    Found 7-bit comparator greater for signal <PWR_7_o_isrunning_LessThan_74_o> created at line 247
+    Found 7-bit comparator greater for signal <PWR_7_o_isrunning_LessThan_76_o> created at line 252
+    Found 7-bit comparator greater for signal <PWR_7_o_isrunning_LessThan_78_o> created at line 257
+    Found 7-bit comparator greater for signal <GND_4_o_isrunning_LessThan_80_o> created at line 262
+    Found 7-bit comparator greater for signal <GND_4_o_isrunning_LessThan_82_o> created at line 267
+    Found 7-bit comparator greater for signal <GND_4_o_isrunning_LessThan_84_o> created at line 272
+    Found 7-bit comparator greater for signal <GND_4_o_isrunning_LessThan_86_o> created at line 277
+    Found 7-bit comparator greater for signal <GND_4_o_isrunning_LessThan_88_o> created at line 282
+    Found 7-bit comparator greater for signal <GND_4_o_isrunning_LessThan_90_o> created at line 287
+    WARNING:Xst:2404 -  FFs/Latches <led1<0:0>> (without init value) have a constant value of 0 in block <stopwatch>.
+    WARNING:Xst:2404 -  FFs/Latches <led2<0:0>> (without init value) have a constant value of 0 in block <stopwatch>.
+    WARNING:Xst:2404 -  FFs/Latches <led3<0:0>> (without init value) have a constant value of 0 in block <stopwatch>.
+    WARNING:Xst:2404 -  FFs/Latches <led4<0:0>> (without init value) have a constant value of 0 in block <stopwatch>.
+    WARNING:Xst:2404 -  FFs/Latches <led5<0:0>> (without init value) have a constant value of 0 in block <stopwatch>.
+    WARNING:Xst:2404 -  FFs/Latches <led6<0:0>> (without init value) have a constant value of 0 in block <stopwatch>.
+    Summary:
+	inferred   6 RAM(s).
+	inferred  13 Adder/Subtractor(s).
+	inferred  91 D-type flip-flop(s).
+	inferred  23 Comparator(s).
+	inferred  80 Multiplexer(s).
+Unit <stopwatch> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 11
+ 16x7-bit single-port Read Only RAM                    : 10
+ 4x7-bit single-port Read Only RAM                     : 1
+# Adders/Subtractors                                   : 31
+ 27-bit adder                                          : 2
+ 4-bit adder                                           : 2
+ 4-bit subtractor                                      : 20
+ 6-bit adder                                           : 1
+ 6-bit subtractor                                      : 1
+ 7-bit adder                                           : 4
+ 7-bit subtractor                                      : 1
+# Registers                                            : 29
+ 1-bit register                                        : 7
+ 27-bit register                                       : 2
+ 4-bit register                                        : 2
+ 6-bit register                                        : 2
+ 7-bit register                                        : 16
+# Comparators                                          : 47
+ 27-bit comparator greater                             : 2
+ 4-bit comparator greater                              : 4
+ 6-bit comparator greater                              : 9
+ 7-bit comparator greater                              : 32
+# Multiplexers                                         : 172
+ 1-bit 2-to-1 multiplexer                              : 71
+ 27-bit 2-to-1 multiplexer                             : 5
+ 4-bit 2-to-1 multiplexer                              : 51
+ 6-bit 2-to-1 multiplexer                              : 15
+ 7-bit 2-to-1 multiplexer                              : 30
+# FSMs                                                 : 2
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst - The specified part-type was not generated at build time. XST is loading the full part-type and will therefore consume more CPU and memory.
+Loading device for application Rf_Device from file '7a100t.nph' in environment /opt/Xilinx/14.7/ISE_DS/ISE/.
+Loading device for application Rf_Device from file '7a100t.nph' in environment /opt/Xilinx/14.7/ISE_DS/ISE/.
+INFO:Xst:2261 - The FF/Latch <d3_1> in Unit <cal1> is equivalent to the following 3 FFs/Latches, which will be removed : <d3_2> <d3_3> <d3_6> 
+INFO:Xst:2261 - The FF/Latch <led6bit_0> in Unit <cal1> is equivalent to the following FF/Latch, which will be removed : <led6> 
+INFO:Xst:2261 - The FF/Latch <led6bit_1> in Unit <cal1> is equivalent to the following FF/Latch, which will be removed : <led5> 
+INFO:Xst:2261 - The FF/Latch <led6bit_2> in Unit <cal1> is equivalent to the following FF/Latch, which will be removed : <led4> 
+INFO:Xst:2261 - The FF/Latch <led6bit_3> in Unit <cal1> is equivalent to the following FF/Latch, which will be removed : <led3> 
+INFO:Xst:2261 - The FF/Latch <led6bit_4> in Unit <cal1> is equivalent to the following FF/Latch, which will be removed : <led2> 
+INFO:Xst:2261 - The FF/Latch <led6bit_5> in Unit <cal1> is equivalent to the following FF/Latch, which will be removed : <led1> 
+INFO:Xst:2261 - The FF/Latch <d3_4> in Unit <cal1> is equivalent to the following FF/Latch, which will be removed : <d3_5> 
+WARNING:Xst:1710 - FF/Latch <d3_0> (without init value) has a constant value of 0 in block <cal1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <d3_4> (without init value) has a constant value of 1 in block <cal1>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <calendar>.
+INFO:Xst:3231 - The small RAM <Mram_setStatus[2]_GND_3_o_wide_mux_158_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <setStatus[2]_GND_3_o_mux_147_OUT> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram__n0451> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 7-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <GND_3_o_GND_3_o_mux_146_OUT<1:0>> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_setStatus[2]_GND_3_o_wide_mux_149_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <setStatus[2]_GND_3_o_mux_132_OUT> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_GND_3_o_GND_3_o_wide_mux_148_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <GND_3_o_PWR_3_o_mux_131_OUT> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_setStatus[2]_GND_3_o_wide_mux_151_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <setStatus[2]_GND_3_o_mux_135_OUT> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <calendar> synthesized (advanced).
+
+Synthesizing (advanced) Unit <stopwatch>.
+The following registers are absorbed into counter <counter1>: 1 register on signal <counter1>.
+INFO:Xst:3231 - The small RAM <Mram_isrunning_GND_4_o_wide_mux_112_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <isrunning_GND_4_o_mux_72_OUT> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_GND_4_o_GND_4_o_wide_mux_111_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <("0",GND_4_o_GND_4_o_mux_71_OUT)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_isrunning_GND_4_o_wide_mux_114_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <isrunning_GND_4_o_mux_108_OUT> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_GND_4_o_GND_4_o_wide_mux_113_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <GND_4_o_PWR_7_o_mux_107_OUT> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_isrunning_GND_4_o_wide_mux_110_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <isrunning_GND_4_o_mux_52_OUT> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_GND_4_o_GND_4_o_wide_mux_109_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <("0",GND_4_o_GND_4_o_mux_51_OUT)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <stopwatch> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 11
+ 16x7-bit single-port distributed Read Only RAM        : 10
+ 4x7-bit single-port distributed Read Only RAM         : 1
+# Adders/Subtractors                                   : 30
+ 27-bit adder                                          : 1
+ 4-bit adder                                           : 2
+ 4-bit subtractor                                      : 20
+ 6-bit adder                                           : 1
+ 6-bit subtractor                                      : 1
+ 7-bit adder                                           : 4
+ 7-bit subtractor                                      : 1
+# Counters                                             : 1
+ 27-bit up counter                                     : 1
+# Registers                                            : 166
+ Flip-Flops                                            : 166
+# Comparators                                          : 47
+ 27-bit comparator greater                             : 2
+ 4-bit comparator greater                              : 4
+ 6-bit comparator greater                              : 9
+ 7-bit comparator greater                              : 32
+# Multiplexers                                         : 176
+ 1-bit 2-to-1 multiplexer                              : 77
+ 27-bit 2-to-1 multiplexer                             : 4
+ 4-bit 2-to-1 multiplexer                              : 51
+ 6-bit 2-to-1 multiplexer                              : 14
+ 7-bit 2-to-1 multiplexer                              : 30
+# FSMs                                                 : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <d3_0> (without init value) has a constant value of 0 in block <calendar>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d3_4> (without init value) has a constant value of 1 in block <calendar>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d3_5> (without init value) has a constant value of 1 in block <calendar>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <d3_1> in Unit <calendar> is equivalent to the following 3 FFs/Latches, which will be removed : <d3_2> <d3_3> <d3_6> 
+INFO:Xst:2261 - The FF/Latch <led6bit_0> in Unit <calendar> is equivalent to the following FF/Latch, which will be removed : <led6> 
+INFO:Xst:2261 - The FF/Latch <led6bit_1> in Unit <calendar> is equivalent to the following FF/Latch, which will be removed : <led5> 
+INFO:Xst:2261 - The FF/Latch <led6bit_2> in Unit <calendar> is equivalent to the following FF/Latch, which will be removed : <led4> 
+INFO:Xst:2261 - The FF/Latch <led6bit_3> in Unit <calendar> is equivalent to the following FF/Latch, which will be removed : <led3> 
+INFO:Xst:2261 - The FF/Latch <led6bit_4> in Unit <calendar> is equivalent to the following FF/Latch, which will be removed : <led2> 
+INFO:Xst:2261 - The FF/Latch <led6bit_5> in Unit <calendar> is equivalent to the following FF/Latch, which will be removed : <led1> 
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <m1/FSM_0> on signal <isUsing[1:3]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 001   | 001
+ 011   | 011
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <m1/cal1/FSM_1> on signal <setStatus[1:3]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 000
+ 001   | 001
+ 010   | 010
+ 011   | 011
+ 100   | 100
+-------------------
+WARNING:Xst:1710 - FF/Latch <d5_5> (without init value) has a constant value of 1 in block <calendar>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <d5_3> in Unit <calendar> is equivalent to the following FF/Latch, which will be removed : <d5_6> 
+
+Optimizing unit <top> ...
+
+Optimizing unit <modeControl> ...
+
+Optimizing unit <calendar> ...
+WARNING:Xst:1293 - FF/Latch <yoil_3> has a constant value of 0 in block <calendar>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <yoil_3> has a constant value of 0 in block <calendar>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <day_5> has a constant value of 0 in block <calendar>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <stopwatch> ...
+WARNING:Xst:1293 - FF/Latch <sec_6> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <m_6> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sec_6> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <m1/s1/counter1_15> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <m1/s1/counter1_16> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <m1/s1/counter1_17> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <m1/s1/counter1_18> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <m1/s1/counter1_19> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <m1/s1/counter1_20> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <m1/s1/counter1_21> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <m1/s1/counter1_22> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <m1/s1/counter1_23> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <m1/s1/counter1_24> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <m1/s1/counter1_25> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <m1/s1/counter1_26> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <m1/cal1/counter1_16> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <m1/cal1/counter1_17> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <m1/cal1/counter1_18> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <m1/cal1/counter1_19> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <m1/cal1/counter1_20> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <m1/cal1/counter1_21> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <m1/cal1/counter1_22> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <m1/cal1/counter1_23> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <m1/cal1/counter1_24> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <m1/cal1/counter1_25> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <m1/cal1/counter1_26> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <m1/cal1/day_5> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <m1/s1/d3_6> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <m1/s1/d3_3> 
+INFO:Xst:2261 - The FF/Latch <m1/s1/d1_6> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <m1/s1/d1_3> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 154
+ Flip-Flops                                            : 154
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 505
+#      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 30
+#      LUT2                        : 24
+#      LUT3                        : 59
+#      LUT4                        : 54
+#      LUT5                        : 91
+#      LUT6                        : 164
+#      MUXCY                       : 41
+#      MUXF7                       : 7
+#      VCC                         : 1
+#      XORCY                       : 31
+# FlipFlops/Latches                : 154
+#      FD                          : 117
+#      FDE                         : 16
+#      FDR                         : 21
+# Clock Buffers                    : 2
+#      BUFGP                       : 2
+# IO Buffers                       : 52
+#      IBUF                        : 4
+#      OBUF                        : 48
+
+Device utilization summary:
+---------------------------
+
+Selected Device : xa7a100tcsg324-2i 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             154  out of  126800     0%  
+ Number of Slice LUTs:                  424  out of  63400     0%  
+    Number used as Logic:               424  out of  63400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    428
+   Number with an unused Flip Flop:     274  out of    428    64%  
+   Number with an unused LUT:             4  out of    428     0%  
+   Number of fully used LUT-FF pairs:   150  out of    428    35%  
+   Number of unique control sets:         6
+
+IO Utilization: 
+ Number of IOs:                          65
+ Number of bonded IOBs:                  54  out of    210    25%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                2  out of     32     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+push_switch1                       | BUFGP                  | 1     |
+clk                                | BUFGP                  | 153   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 6.356ns (Maximum Frequency: 157.333MHz)
+   Minimum input arrival time before clock: 6.269ns
+   Maximum output required time after clock: 1.507ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'push_switch1'
+  Clock period: 1.294ns (frequency: 772.658MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               1.294ns (Levels of Logic = 1)
+  Source:            m1/isUsing_FSM_FFd2 (FF)
+  Destination:       m1/isUsing_FSM_FFd2 (FF)
+  Source Clock:      push_switch1 rising
+  Destination Clock: push_switch1 rising
+
+  Data Path: m1/isUsing_FSM_FFd2 to m1/isUsing_FSM_FFd2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              55   0.361   0.473  m1/isUsing_FSM_FFd2 (m1/isUsing_FSM_FFd2)
+     INV:I->O              1   0.113   0.339  m1/isUsing_FSM_FFd2-In1_INV_0 (m1/isUsing_FSM_FFd2-In)
+     FD:D                      0.008          m1/isUsing_FSM_FFd2
+    ----------------------------------------
+    Total                      1.294ns (0.482ns logic, 0.812ns route)
+                                       (37.2% logic, 62.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 6.356ns (frequency: 157.333MHz)
+  Total number of paths / destination ports: 756375 / 185
+-------------------------------------------------------------------------
+Delay:               6.356ns (Levels of Logic = 14)
+  Source:            m1/cal1/counter1_10 (FF)
+  Destination:       m1/cal1/d6_6 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: m1/cal1/counter1_10 to m1/cal1/d6_6
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              3   0.361   0.755  m1/cal1/counter1_10 (m1/cal1/counter1_10)
+     LUT5:I0->O            1   0.097   0.000  m1/cal1/Mcompar_counter1[26]_GND_3_o_LessThan_14_o_lut<0> (m1/cal1/Mcompar_counter1[26]_GND_3_o_LessThan_14_o_lut<0>)
+     MUXCY:S->O            1   0.353   0.000  m1/cal1/Mcompar_counter1[26]_GND_3_o_LessThan_14_o_cy<0> (m1/cal1/Mcompar_counter1[26]_GND_3_o_LessThan_14_o_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  m1/cal1/Mcompar_counter1[26]_GND_3_o_LessThan_14_o_cy<1> (m1/cal1/Mcompar_counter1[26]_GND_3_o_LessThan_14_o_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  m1/cal1/Mcompar_counter1[26]_GND_3_o_LessThan_14_o_cy<2> (m1/cal1/Mcompar_counter1[26]_GND_3_o_LessThan_14_o_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  m1/cal1/Mcompar_counter1[26]_GND_3_o_LessThan_14_o_cy<3> (m1/cal1/Mcompar_counter1[26]_GND_3_o_LessThan_14_o_cy<3>)
+     MUXCY:CI->O          40   0.023   0.486  m1/cal1/Mcompar_counter1[26]_GND_3_o_LessThan_14_o_cy<4> (m1/cal1/Mcompar_counter1[26]_GND_3_o_LessThan_14_o_cy<4>)
+     LUT6:I5->O            1   0.097   0.439  m1/cal1/setStatus[2]_GND_3_o_LessThan_67_o21_SW2 (N53)
+     LUT6:I4->O           17   0.097   0.661  m1/cal1/Mmux_setStatus[2]_GND_3_o_mux_65_OUT45 (m1/cal1/setStatus[2]_GND_3_o_mux_65_OUT<3>)
+     LUT5:I2->O           18   0.097   0.450  m1/cal1/GND_3_o_GND_3_o_OR_48_o1 (m1/cal1/GND_3_o_GND_3_o_OR_48_o)
+     LUT6:I5->O            4   0.097   0.456  m1/cal1/Mmux_setStatus[2]_setStatus[2]_mux_94_OUT21 (m1/cal1/Mmux_setStatus[2]_setStatus[2]_mux_94_OUT2)
+     LUT4:I2->O            1   0.097   0.439  m1/cal1/GND_3_o_GND_3_o_mux_146_OUT<0>_SW0_SW2 (N63)
+     LUT6:I4->O            2   0.097   0.576  m1/cal1/GND_3_o_GND_3_o_mux_146_OUT<0>_SW0 (N8)
+     LUT6:I3->O           10   0.097   0.405  m1/cal1/GND_3_o_GND_3_o_mux_146_OUT<0> (m1/cal1/GND_3_o_GND_3_o_mux_146_OUT<0>)
+     LUT6:I5->O            1   0.097   0.000  m1/cal1/Mram__n045141 (m1/cal1/Mram__n04514)
+     FDR:D                     0.008          m1/cal1/d5_4
+    ----------------------------------------
+    Total                      6.356ns (1.687ns logic, 4.669ns route)
+                                       (26.5% logic, 73.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 133784 / 169
+-------------------------------------------------------------------------
+Offset:              6.269ns (Levels of Logic = 11)
+  Source:            push_switch6 (PAD)
+  Destination:       m1/cal1/d6_6 (FF)
+  Destination Clock: clk rising
+
+  Data Path: push_switch6 to m1/cal1/d6_6
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            73   0.001   0.708  push_switch6_IBUF (push_switch6_IBUF)
+     LUT3:I0->O            2   0.097   0.748  m1/cal1/Mmux_setStatus[2]_y[6]_wide_mux_61_OUT3211 (m1/cal1/Mmux_setStatus[2]_y[6]_wide_mux_61_OUT321)
+     LUT5:I0->O            1   0.097   0.355  m1/cal1/setStatus[2]_GND_3_o_LessThan_67_o1 (m1/cal1/setStatus[2]_GND_3_o_LessThan_67_o1)
+     LUT4:I3->O            1   0.097   0.439  m1/cal1/setStatus[2]_GND_3_o_LessThan_67_o3 (m1/cal1/setStatus[2]_GND_3_o_LessThan_67_o3)
+     LUT6:I4->O           18   0.097   0.711  m1/cal1/setStatus[2]_GND_3_o_LessThan_67_o4 (m1/cal1/setStatus[2]_GND_3_o_LessThan_67_o)
+     LUT5:I1->O           18   0.097   0.450  m1/cal1/GND_3_o_GND_3_o_OR_48_o1 (m1/cal1/GND_3_o_GND_3_o_OR_48_o)
+     LUT6:I5->O            4   0.097   0.456  m1/cal1/Mmux_setStatus[2]_setStatus[2]_mux_94_OUT21 (m1/cal1/Mmux_setStatus[2]_setStatus[2]_mux_94_OUT2)
+     LUT4:I2->O            1   0.097   0.439  m1/cal1/GND_3_o_GND_3_o_mux_146_OUT<0>_SW0_SW2 (N63)
+     LUT6:I4->O            2   0.097   0.576  m1/cal1/GND_3_o_GND_3_o_mux_146_OUT<0>_SW0 (N8)
+     LUT6:I3->O           10   0.097   0.405  m1/cal1/GND_3_o_GND_3_o_mux_146_OUT<0> (m1/cal1/GND_3_o_GND_3_o_mux_146_OUT<0>)
+     LUT6:I5->O            1   0.097   0.000  m1/cal1/Mram__n045141 (m1/cal1/Mram__n04514)
+     FDR:D                     0.008          m1/cal1/d5_4
+    ----------------------------------------
+    Total                      6.269ns (0.979ns logic, 5.290ns route)
+                                       (15.6% logic, 84.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'push_switch1'
+  Total number of paths / destination ports: 48 / 48
+-------------------------------------------------------------------------
+Offset:              1.507ns (Levels of Logic = 2)
+  Source:            m1/isUsing_FSM_FFd2 (FF)
+  Destination:       segment3<6> (PAD)
+  Source Clock:      push_switch1 rising
+
+  Data Path: m1/isUsing_FSM_FFd2 to segment3<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              55   0.361   0.705  m1/isUsing_FSM_FFd2 (m1/isUsing_FSM_FFd2)
+     LUT3:I0->O            2   0.097   0.344  m1/Mmux_d341 (segment3_3_OBUF)
+     OBUF:I->O                 0.000          segment3_3_OBUF (segment3<3>)
+    ----------------------------------------
+    Total                      1.507ns (0.458ns logic, 1.049ns route)
+                                       (30.4% logic, 69.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 86 / 48
+-------------------------------------------------------------------------
+Offset:              1.253ns (Levels of Logic = 2)
+  Source:            m1/cal1/d3_1 (FF)
+  Destination:       segment3<6> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: m1/cal1/d3_1 to segment3<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.361   0.451  m1/cal1/d3_1 (m1/cal1/d3_1)
+     LUT3:I1->O            2   0.097   0.344  m1/Mmux_d341 (segment3_3_OBUF)
+     OBUF:I->O                 0.000          segment3_3_OBUF (segment3<3>)
+    ----------------------------------------
+    Total                      1.253ns (0.458ns logic, 0.795ns route)
+                                       (36.5% logic, 63.5% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    6.356|         |         |         |
+push_switch1   |    2.101|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock push_switch1
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+push_switch1   |    1.294|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 119.00 secs
+Total CPU time to Xst completion: 112.71 secs
+ 
+--> 
+
+
+Total memory usage is 951844 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  108 (   0 filtered)
+Number of infos    :   30 (   0 filtered)
+

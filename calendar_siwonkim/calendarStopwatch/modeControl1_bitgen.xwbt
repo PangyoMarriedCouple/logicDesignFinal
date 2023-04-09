@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/csehome/ksw2266/Downloads/calendar_siwonkim/calendarStopwatch/modeControl1.ncd
+OUTFILE=/csehome/ksw2266/Downloads/calendar_siwonkim/calendarStopwatch/modeControl1.bit
+FAMILY=Spartan3A and Spartan3AN
+PART=xc3s50an-5tqg144
+WORKINGDIR=/csehome/ksw2266/Downloads/calendar_siwonkim/calendarStopwatch
+LICENSE=WebPack
+USER_INFO=211016637_0_0_814

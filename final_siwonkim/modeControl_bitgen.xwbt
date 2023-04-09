@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/csehome/ksw2266/Downloads/final_siwonkim/modeControl.ncd
+OUTFILE=/csehome/ksw2266/Downloads/final_siwonkim/modeControl.bit
+FAMILY=Spartan3A and Spartan3AN
+PART=xc3s50an-4tqg144
+WORKINGDIR=/csehome/ksw2266/Downloads/final_siwonkim
+LICENSE=WebPack
+USER_INFO=211016637_0_0_814

@@ -1,0 +1,129 @@
+%Warning-WIDTH: ../..//alarm.v:362: Operator ASSIGN expects 4 bits on the Assign RHS, but Assign RHS's SUB generates 32 or 6 bits.
+%Warning-WIDTH: Use "/* verilator lint_off WIDTH */" and lint_on around source to disable this message.
+%Warning-WIDTH: ../..//alarm.v:367: Operator ASSIGN expects 4 bits on the Assign RHS, but Assign RHS's SUB generates 32 or 6 bits.
+%Warning-WIDTH: ../..//alarm.v:372: Operator ASSIGN expects 4 bits on the Assign RHS, but Assign RHS's SUB generates 32 or 6 bits.
+%Warning-WIDTH: ../..//alarm.v:377: Operator ASSIGN expects 4 bits on the Assign RHS, but Assign RHS's SUB generates 32 or 6 bits.
+%Warning-WIDTH: ../..//alarm.v:382: Operator ASSIGN expects 4 bits on the Assign RHS, but Assign RHS's SUB generates 32 or 6 bits.
+%Warning-WIDTH: ../..//alarm.v:387: Operator ASSIGN expects 4 bits on the Assign RHS, but Assign RHS's VARREF 'am' generates 6 bits.
+%Warning-WIDTH: ../..//alarm.v:394: Operator ASSIGN expects 4 bits on the Assign RHS, but Assign RHS's SUB generates 32 or 6 bits.
+%Warning-WIDTH: ../..//alarm.v:399: Operator ASSIGN expects 4 bits on the Assign RHS, but Assign RHS's SUB generates 32 or 6 bits.
+%Warning-WIDTH: ../..//alarm.v:404: Operator ASSIGN expects 4 bits on the Assign RHS, but Assign RHS's SUB generates 32 or 6 bits.
+%Warning-WIDTH: ../..//alarm.v:409: Operator ASSIGN expects 4 bits on the Assign RHS, but Assign RHS's SUB generates 32 or 6 bits.
+%Warning-WIDTH: ../..//alarm.v:414: Operator ASSIGN expects 4 bits on the Assign RHS, but Assign RHS's SUB generates 32 or 6 bits.
+%Warning-WIDTH: ../..//alarm.v:419: Operator ASSIGN expects 4 bits on the Assign RHS, but Assign RHS's VARREF 'asec' generates 6 bits.
+%Warning-WIDTH: ../..//alarm.v:473: Operator CASE expects 6 bits on the Case Item, but Case Item's CONST '4'h0' generates 4 bits.
+%Warning-WIDTH: ../..//alarm.v:473: Operator CASE expects 6 bits on the Case Item, but Case Item's CONST '4'h1' generates 4 bits.
+%Warning-WIDTH: ../..//alarm.v:473: Operator CASE expects 6 bits on the Case Item, but Case Item's CONST '4'h2' generates 4 bits.
+%Warning-WIDTH: ../..//alarm.v:473: Operator CASE expects 6 bits on the Case Item, but Case Item's CONST '4'h3' generates 4 bits.
+%Warning-WIDTH: ../..//alarm.v:473: Operator CASE expects 6 bits on the Case Item, but Case Item's CONST '4'h4' generates 4 bits.
+%Warning-WIDTH: ../..//alarm.v:473: Operator CASE expects 6 bits on the Case Item, but Case Item's CONST '4'h5' generates 4 bits.
+%Warning-WIDTH: ../..//alarm.v:473: Operator CASE expects 6 bits on the Case Item, but Case Item's CONST '4'h6' generates 4 bits.
+%Warning-WIDTH: ../..//alarm.v:473: Operator CASE expects 6 bits on the Case Item, but Case Item's CONST '4'h7' generates 4 bits.
+%Warning-WIDTH: ../..//alarm.v:473: Operator CASE expects 6 bits on the Case Item, but Case Item's CONST '4'h8' generates 4 bits.
+%Warning-WIDTH: ../..//alarm.v:473: Operator CASE expects 6 bits on the Case Item, but Case Item's CONST '4'h9' generates 4 bits.
+%Warning-WIDTH: ../..//alarm.v:489: Operator CASE expects 32 or 6 bits on the Case Item, but Case Item's CONST '4'h0' generates 4 bits.
+%Warning-WIDTH: ../..//alarm.v:489: Operator CASE expects 32 or 6 bits on the Case Item, but Case Item's CONST '4'h1' generates 4 bits.
+%Warning-WIDTH: ../..//alarm.v:489: Operator CASE expects 32 or 6 bits on the Case Item, but Case Item's CONST '4'h2' generates 4 bits.
+%Warning-WIDTH: ../..//alarm.v:489: Operator CASE expects 32 or 6 bits on the Case Item, but Case Item's CONST '4'h3' generates 4 bits.
+%Warning-WIDTH: ../..//alarm.v:489: Operator CASE expects 32 or 6 bits on the Case Item, but Case Item's CONST '4'h4' generates 4 bits.
+%Warning-WIDTH: ../..//alarm.v:489: Operator CASE expects 32 or 6 bits on the Case Item, but Case Item's CONST '4'h5' generates 4 bits.
+%Warning-WIDTH: ../..//alarm.v:489: Operator CASE expects 32 or 6 bits on the Case Item, but Case Item's CONST '4'h6' generates 4 bits.
+%Warning-WIDTH: ../..//alarm.v:489: Operator CASE expects 32 or 6 bits on the Case Item, but Case Item's CONST '4'h7' generates 4 bits.
+%Warning-WIDTH: ../..//alarm.v:489: Operator CASE expects 32 or 6 bits on the Case Item, but Case Item's CONST '4'h8' generates 4 bits.
+%Warning-WIDTH: ../..//alarm.v:489: Operator CASE expects 32 or 6 bits on the Case Item, but Case Item's CONST '4'h9' generates 4 bits.
+%Warning-WIDTH: ../..//alarm.v:505: Operator CASE expects 32 or 6 bits on the Case Item, but Case Item's CONST '4'h0' generates 4 bits.
+%Warning-WIDTH: ../..//alarm.v:505: Operator CASE expects 32 or 6 bits on the Case Item, but Case Item's CONST '4'h1' generates 4 bits.
+%Warning-WIDTH: ../..//alarm.v:505: Operator CASE expects 32 or 6 bits on the Case Item, but Case Item's CONST '4'h2' generates 4 bits.
+%Warning-WIDTH: ../..//alarm.v:505: Operator CASE expects 32 or 6 bits on the Case Item, but Case Item's CONST '4'h3' generates 4 bits.
+%Warning-WIDTH: ../..//alarm.v:535: Operator CASE expects 4 bits on the Case expression, but Case expression's VARREF 'm1' generates 3 bits.
+%Warning-WIDTH: ../..//alarm.v:599: Operator CASE expects 6 bits on the Case Item, but Case Item's CONST '4'h0' generates 4 bits.
+%Warning-WIDTH: ../..//alarm.v:599: Operator CASE expects 6 bits on the Case Item, but Case Item's CONST '4'h1' generates 4 bits.
+%Warning-WIDTH: ../..//alarm.v:599: Operator CASE expects 6 bits on the Case Item, but Case Item's CONST '4'h2' generates 4 bits.
+%Warning-WIDTH: ../..//alarm.v:599: Operator CASE expects 6 bits on the Case Item, but Case Item's CONST '4'h3' generates 4 bits.
+%Warning-WIDTH: ../..//alarm.v:599: Operator CASE expects 6 bits on the Case Item, but Case Item's CONST '4'h4' generates 4 bits.
+%Warning-WIDTH: ../..//alarm.v:599: Operator CASE expects 6 bits on the Case Item, but Case Item's CONST '4'h5' generates 4 bits.
+%Warning-WIDTH: ../..//alarm.v:599: Operator CASE expects 6 bits on the Case Item, but Case Item's CONST '4'h6' generates 4 bits.
+%Warning-WIDTH: ../..//alarm.v:599: Operator CASE expects 6 bits on the Case Item, but Case Item's CONST '4'h7' generates 4 bits.
+%Warning-WIDTH: ../..//alarm.v:599: Operator CASE expects 6 bits on the Case Item, but Case Item's CONST '4'h8' generates 4 bits.
+%Warning-WIDTH: ../..//alarm.v:599: Operator CASE expects 6 bits on the Case Item, but Case Item's CONST '4'h9' generates 4 bits.
+%Warning-WIDTH: ../..//alarm.v:615: Operator CASE expects 32 or 6 bits on the Case Item, but Case Item's CONST '4'h0' generates 4 bits.
+%Warning-WIDTH: ../..//alarm.v:615: Operator CASE expects 32 or 6 bits on the Case Item, but Case Item's CONST '4'h1' generates 4 bits.
+%Warning-WIDTH: ../..//alarm.v:626: Operator CASE expects 32 or 6 bits on the Case Item, but Case Item's CONST '4'h0' generates 4 bits.
+%Warning-WIDTH: ../..//alarm.v:626: Operator CASE expects 32 or 6 bits on the Case Item, but Case Item's CONST '4'h1' generates 4 bits.
+%Warning-WIDTH: ../..//alarm.v:626: Operator CASE expects 32 or 6 bits on the Case Item, but Case Item's CONST '4'h2' generates 4 bits.
+%Warning-WIDTH: ../..//alarm.v:626: Operator CASE expects 32 or 6 bits on the Case Item, but Case Item's CONST '4'h3' generates 4 bits.
+%Warning-WIDTH: ../..//alarm.v:626: Operator CASE expects 32 or 6 bits on the Case Item, but Case Item's CONST '4'h4' generates 4 bits.
+%Warning-WIDTH: ../..//alarm.v:626: Operator CASE expects 32 or 6 bits on the Case Item, but Case Item's CONST '4'h5' generates 4 bits.
+%Warning-WIDTH: ../..//alarm.v:626: Operator CASE expects 32 or 6 bits on the Case Item, but Case Item's CONST '4'h6' generates 4 bits.
+%Warning-WIDTH: ../..//alarm.v:626: Operator CASE expects 32 or 6 bits on the Case Item, but Case Item's CONST '4'h7' generates 4 bits.
+%Warning-WIDTH: ../..//alarm.v:626: Operator CASE expects 32 or 6 bits on the Case Item, but Case Item's CONST '4'h8' generates 4 bits.
+%Warning-WIDTH: ../..//alarm.v:626: Operator CASE expects 32 or 6 bits on the Case Item, but Case Item's CONST '4'h9' generates 4 bits.
+%Warning-WIDTH: ../..//alarm.v:642: Operator CASE expects 32 or 6 bits on the Case Item, but Case Item's CONST '4'h0' generates 4 bits.
+%Warning-WIDTH: ../..//alarm.v:642: Operator CASE expects 32 or 6 bits on the Case Item, but Case Item's CONST '4'h1' generates 4 bits.
+%Warning-WIDTH: ../..//alarm.v:669: Operator CASE expects 4 bits on the Case expression, but Case expression's VARREF 'sec1' generates 3 bits.
+%Warning-WIDTH: ../..//alarm.v:681: Operator CASE expects 4 bits on the Case expression, but Case expression's VARREF 'm1' generates 3 bits.
+%Warning-WIDTH: ../..//clock.v:361: Operator ASSIGN expects 4 bits on the Assign RHS, but Assign RHS's SUB generates 32 or 6 bits.
+%Warning-WIDTH: ../..//clock.v:366: Operator ASSIGN expects 4 bits on the Assign RHS, but Assign RHS's SUB generates 32 or 6 bits.
+%Warning-WIDTH: ../..//clock.v:371: Operator ASSIGN expects 4 bits on the Assign RHS, but Assign RHS's SUB generates 32 or 6 bits.
+%Warning-WIDTH: ../..//clock.v:376: Operator ASSIGN expects 4 bits on the Assign RHS, but Assign RHS's SUB generates 32 or 6 bits.
+%Warning-WIDTH: ../..//clock.v:381: Operator ASSIGN expects 4 bits on the Assign RHS, but Assign RHS's SUB generates 32 or 6 bits.
+%Warning-WIDTH: ../..//clock.v:386: Operator ASSIGN expects 4 bits on the Assign RHS, but Assign RHS's VARREF 'm' generates 6 bits.
+%Warning-WIDTH: ../..//clock.v:393: Operator ASSIGN expects 4 bits on the Assign RHS, but Assign RHS's SUB generates 32 or 6 bits.
+%Warning-WIDTH: ../..//clock.v:398: Operator ASSIGN expects 4 bits on the Assign RHS, but Assign RHS's SUB generates 32 or 6 bits.
+%Warning-WIDTH: ../..//clock.v:403: Operator ASSIGN expects 4 bits on the Assign RHS, but Assign RHS's SUB generates 32 or 6 bits.
+%Warning-WIDTH: ../..//clock.v:408: Operator ASSIGN expects 4 bits on the Assign RHS, but Assign RHS's SUB generates 32 or 6 bits.
+%Warning-WIDTH: ../..//clock.v:413: Operator ASSIGN expects 4 bits on the Assign RHS, but Assign RHS's SUB generates 32 or 6 bits.
+%Warning-WIDTH: ../..//clock.v:418: Operator ASSIGN expects 4 bits on the Assign RHS, but Assign RHS's VARREF 'sec' generates 6 bits.
+%Warning-WIDTH: ../..//clock.v:490: Operator CASE expects 6 bits on the Case Item, but Case Item's CONST '4'h0' generates 4 bits.
+%Warning-WIDTH: ../..//clock.v:490: Operator CASE expects 6 bits on the Case Item, but Case Item's CONST '4'h1' generates 4 bits.
+%Warning-WIDTH: ../..//clock.v:490: Operator CASE expects 6 bits on the Case Item, but Case Item's CONST '4'h2' generates 4 bits.
+%Warning-WIDTH: ../..//clock.v:490: Operator CASE expects 6 bits on the Case Item, but Case Item's CONST '4'h3' generates 4 bits.
+%Warning-WIDTH: ../..//clock.v:490: Operator CASE expects 6 bits on the Case Item, but Case Item's CONST '4'h4' generates 4 bits.
+%Warning-WIDTH: ../..//clock.v:490: Operator CASE expects 6 bits on the Case Item, but Case Item's CONST '4'h5' generates 4 bits.
+%Warning-WIDTH: ../..//clock.v:490: Operator CASE expects 6 bits on the Case Item, but Case Item's CONST '4'h6' generates 4 bits.
+%Warning-WIDTH: ../..//clock.v:490: Operator CASE expects 6 bits on the Case Item, but Case Item's CONST '4'h7' generates 4 bits.
+%Warning-WIDTH: ../..//clock.v:490: Operator CASE expects 6 bits on the Case Item, but Case Item's CONST '4'h8' generates 4 bits.
+%Warning-WIDTH: ../..//clock.v:490: Operator CASE expects 6 bits on the Case Item, but Case Item's CONST '4'h9' generates 4 bits.
+%Warning-WIDTH: ../..//clock.v:506: Operator CASE expects 32 or 6 bits on the Case Item, but Case Item's CONST '4'h0' generates 4 bits.
+%Warning-WIDTH: ../..//clock.v:506: Operator CASE expects 32 or 6 bits on the Case Item, but Case Item's CONST '4'h1' generates 4 bits.
+%Warning-WIDTH: ../..//clock.v:506: Operator CASE expects 32 or 6 bits on the Case Item, but Case Item's CONST '4'h2' generates 4 bits.
+%Warning-WIDTH: ../..//clock.v:506: Operator CASE expects 32 or 6 bits on the Case Item, but Case Item's CONST '4'h3' generates 4 bits.
+%Warning-WIDTH: ../..//clock.v:506: Operator CASE expects 32 or 6 bits on the Case Item, but Case Item's CONST '4'h4' generates 4 bits.
+%Warning-WIDTH: ../..//clock.v:506: Operator CASE expects 32 or 6 bits on the Case Item, but Case Item's CONST '4'h5' generates 4 bits.
+%Warning-WIDTH: ../..//clock.v:506: Operator CASE expects 32 or 6 bits on the Case Item, but Case Item's CONST '4'h6' generates 4 bits.
+%Warning-WIDTH: ../..//clock.v:506: Operator CASE expects 32 or 6 bits on the Case Item, but Case Item's CONST '4'h7' generates 4 bits.
+%Warning-WIDTH: ../..//clock.v:506: Operator CASE expects 32 or 6 bits on the Case Item, but Case Item's CONST '4'h8' generates 4 bits.
+%Warning-WIDTH: ../..//clock.v:506: Operator CASE expects 32 or 6 bits on the Case Item, but Case Item's CONST '4'h9' generates 4 bits.
+%Warning-WIDTH: ../..//clock.v:522: Operator CASE expects 32 or 6 bits on the Case Item, but Case Item's CONST '4'h0' generates 4 bits.
+%Warning-WIDTH: ../..//clock.v:522: Operator CASE expects 32 or 6 bits on the Case Item, but Case Item's CONST '4'h1' generates 4 bits.
+%Warning-WIDTH: ../..//clock.v:522: Operator CASE expects 32 or 6 bits on the Case Item, but Case Item's CONST '4'h2' generates 4 bits.
+%Warning-WIDTH: ../..//clock.v:522: Operator CASE expects 32 or 6 bits on the Case Item, but Case Item's CONST '4'h3' generates 4 bits.
+%Warning-WIDTH: ../..//clock.v:540: Operator CASE expects 4 bits on the Case expression, but Case expression's VARREF 'm1' generates 3 bits.
+%Warning-WIDTH: ../..//clock.v:592: Operator CASE expects 6 bits on the Case Item, but Case Item's CONST '4'h0' generates 4 bits.
+%Warning-WIDTH: ../..//clock.v:592: Operator CASE expects 6 bits on the Case Item, but Case Item's CONST '4'h1' generates 4 bits.
+%Warning-WIDTH: ../..//clock.v:592: Operator CASE expects 6 bits on the Case Item, but Case Item's CONST '4'h2' generates 4 bits.
+%Warning-WIDTH: ../..//clock.v:592: Operator CASE expects 6 bits on the Case Item, but Case Item's CONST '4'h3' generates 4 bits.
+%Warning-WIDTH: ../..//clock.v:592: Operator CASE expects 6 bits on the Case Item, but Case Item's CONST '4'h4' generates 4 bits.
+%Warning-WIDTH: ../..//clock.v:592: Operator CASE expects 6 bits on the Case Item, but Case Item's CONST '4'h5' generates 4 bits.
+%Warning-WIDTH: ../..//clock.v:592: Operator CASE expects 6 bits on the Case Item, but Case Item's CONST '4'h6' generates 4 bits.
+%Warning-WIDTH: ../..//clock.v:592: Operator CASE expects 6 bits on the Case Item, but Case Item's CONST '4'h7' generates 4 bits.
+%Warning-WIDTH: ../..//clock.v:592: Operator CASE expects 6 bits on the Case Item, but Case Item's CONST '4'h8' generates 4 bits.
+%Warning-WIDTH: ../..//clock.v:592: Operator CASE expects 6 bits on the Case Item, but Case Item's CONST '4'h9' generates 4 bits.
+%Warning-WIDTH: ../..//clock.v:608: Operator CASE expects 32 or 6 bits on the Case Item, but Case Item's CONST '4'h0' generates 4 bits.
+%Warning-WIDTH: ../..//clock.v:608: Operator CASE expects 32 or 6 bits on the Case Item, but Case Item's CONST '4'h1' generates 4 bits.
+%Warning-WIDTH: ../..//clock.v:619: Operator CASE expects 32 or 6 bits on the Case Item, but Case Item's CONST '4'h0' generates 4 bits.
+%Warning-WIDTH: ../..//clock.v:619: Operator CASE expects 32 or 6 bits on the Case Item, but Case Item's CONST '4'h1' generates 4 bits.
+%Warning-WIDTH: ../..//clock.v:619: Operator CASE expects 32 or 6 bits on the Case Item, but Case Item's CONST '4'h2' generates 4 bits.
+%Warning-WIDTH: ../..//clock.v:619: Operator CASE expects 32 or 6 bits on the Case Item, but Case Item's CONST '4'h3' generates 4 bits.
+%Warning-WIDTH: ../..//clock.v:619: Operator CASE expects 32 or 6 bits on the Case Item, but Case Item's CONST '4'h4' generates 4 bits.
+%Warning-WIDTH: ../..//clock.v:619: Operator CASE expects 32 or 6 bits on the Case Item, but Case Item's CONST '4'h5' generates 4 bits.
+%Warning-WIDTH: ../..//clock.v:619: Operator CASE expects 32 or 6 bits on the Case Item, but Case Item's CONST '4'h6' generates 4 bits.
+%Warning-WIDTH: ../..//clock.v:619: Operator CASE expects 32 or 6 bits on the Case Item, but Case Item's CONST '4'h7' generates 4 bits.
+%Warning-WIDTH: ../..//clock.v:619: Operator CASE expects 32 or 6 bits on the Case Item, but Case Item's CONST '4'h8' generates 4 bits.
+%Warning-WIDTH: ../..//clock.v:619: Operator CASE expects 32 or 6 bits on the Case Item, but Case Item's CONST '4'h9' generates 4 bits.
+%Warning-WIDTH: ../..//clock.v:635: Operator CASE expects 32 or 6 bits on the Case Item, but Case Item's CONST '4'h0' generates 4 bits.
+%Warning-WIDTH: ../..//clock.v:635: Operator CASE expects 32 or 6 bits on the Case Item, but Case Item's CONST '4'h1' generates 4 bits.
+%Warning-WIDTH: ../..//clock.v:651: Operator CASE expects 4 bits on the Case expression, but Case expression's VARREF 'sec1' generates 3 bits.
+%Warning-WIDTH: ../..//clock.v:663: Operator CASE expects 4 bits on the Case expression, but Case expression's VARREF 'm1' generates 3 bits.
+%Error: Exiting due to 126 warning(s)
+%Error: Command Failed /home/ise/XilinxFolder/final_siwonkim/SNU-BoardSim/verilator/bin/verilator_bin --cc ../../top.v -I../../ --exe sim.cpp

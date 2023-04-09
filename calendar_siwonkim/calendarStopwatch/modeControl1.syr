@@ -1,0 +1,756 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.03 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.03 secs
+ 
+--> 
+Reading design: modeControl1.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "modeControl1.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "modeControl1"
+Output Format                      : NGC
+Target Device                      : xc3s50an-5-tqg144
+
+---- Source Options
+Top Module Name                    : modeControl1
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "stopwatch.v" in library work
+Compiling verilog file "calendar.v" in library work
+Module <stopwatch> compiled
+Compiling verilog file "modeControl1.v" in library work
+Module <calendar> compiled
+Module <modeControl1> compiled
+No errors in compilation
+Analysis of file <"modeControl1.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <modeControl1> in library <work> with parameters.
+	buttonfreq = "00000000011010101100111111000000"
+
+Analyzing hierarchy for module <calendar> in library <work> with parameters.
+	buttonfreq = "00000000011010101100111111000000"
+	secfreq = "00000010111110101111000010000000"
+
+Analyzing hierarchy for module <stopwatch> in library <work> with parameters.
+	buttonfreq = "00000000011010101100111111000000"
+	secfreq = "00000010111110101111000010000000"
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <modeControl1>.
+	buttonfreq = 32'sb00000000011010101100111111000000
+Module <modeControl1> is correct for synthesis.
+ 
+Analyzing module <calendar> in library <work>.
+	buttonfreq = 32'sb00000000011010101100111111000000
+	secfreq = 32'sb00000010111110101111000010000000
+Module <calendar> is correct for synthesis.
+ 
+Analyzing module <stopwatch> in library <work>.
+	buttonfreq = 32'sb00000000011010101100111111000000
+	secfreq = 32'sb00000010111110101111000010000000
+Module <stopwatch> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <calendar>.
+    Related source file is "calendar.v".
+WARNING:Xst:646 - Signal <y2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <y1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <m2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <m1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <day2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <day1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found finite state machine <FSM_0> for signal <setStatus>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 20                                             |
+    | Inputs             | 3                                              |
+    | Outputs            | 9                                              |
+    | Clock              | clkBoard                  (rising_edge)        |
+    | Power Up State     | 000                                            |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <$old_y1_26> of Case statement line 596 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <$old_y1_26> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+    Using one-hot encoding for signal <$old_y1_26>.
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <$old_day1_30> of Case statement line 683 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <$old_day1_30> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+    Using one-hot encoding for signal <$old_day1_30>.
+    Found 16x7-bit ROM for signal <d2$mux0000> created at line 619.
+    Found 16x7-bit ROM for signal <d4$mux0000> created at line 659.
+    Found 16x7-bit ROM for signal <d6$mux0000> created at line 701.
+    Found 7-bit register for signal <d1>.
+    Found 7-bit register for signal <d2>.
+    Found 7-bit register for signal <d3>.
+    Found 7-bit register for signal <d4>.
+    Found 7-bit register for signal <d5>.
+    Found 7-bit register for signal <d6>.
+    Found 1-bit register for signal <led1>.
+    Found 1-bit register for signal <led2>.
+    Found 1-bit register for signal <led3>.
+    Found 1-bit register for signal <led4>.
+    Found 1-bit register for signal <led5>.
+    Found 1-bit register for signal <led6>.
+    Found 1-bit register for signal <blink>.
+    Found 31-bit up counter for signal <blinkcounter>.
+    Found 27-bit register for signal <counter1>.
+    Found 27-bit adder for signal <counter1$addsub0000>.
+    Found 6-bit register for signal <day>.
+    Found 6-bit register for signal <led6bit>.
+    Found 4-bit register for signal <m>.
+    Found 31-bit comparator less for signal <old_blink_25$cmp_lt0000> created at line 573.
+    Found 6-bit comparator greater for signal <old_day2_31$cmp_gt0000> created at line 545.
+    Found 6-bit comparator greater for signal <old_day2_31$cmp_gt0001> created at line 550.
+    Found 6-bit comparator greater for signal <old_day2_31$cmp_gt0002> created at line 555.
+    Found 4-bit subtractor for signal <old_day2_31$share0000>.
+    Found 6-bit comparator greater for signal <old_day_16$cmp_gt0000> created at line 416.
+    Found 6-bit subtractor for signal <old_day_17$sub0000> created at line 323.
+    Found 6-bit comparator greater for signal <old_day_18$cmp_gt0000> created at line 432.
+    Found 6-bit comparator greater for signal <old_day_20$cmp_gt0000> created at line 448.
+    Found 6-bit comparator less for signal <old_day_23$cmp_lt0000> created at line 453.
+    Found 6-bit comparator less for signal <old_day_23$cmp_lt0001> created at line 437.
+    Found 6-bit comparator less for signal <old_day_23$cmp_lt0002> created at line 421.
+    Found 6-bit adder for signal <old_day_7$addsub0000> created at line 317.
+    Found 4-bit subtractor for signal <old_m2_29$addsub0000> created at line 536.
+    Found 4-bit comparator greater for signal <old_m2_29$cmp_gt0000> created at line 533.
+    Found 4-bit subtractor for signal <old_m_12$addsub0000> created at line 275.
+    Found 4-bit comparator greater for signal <old_m_13$cmp_gt0000> created at line 398.
+    Found 4-bit comparator less for signal <old_m_14$cmp_lt0000> created at line 404.
+    Found 4-bit adder for signal <old_m_5$addsub0000> created at line 269.
+    Found 7-bit comparator greater for signal <old_y2_27$cmp_gt0000> created at line 480.
+    Found 7-bit comparator greater for signal <old_y2_27$cmp_gt0001> created at line 485.
+    Found 7-bit comparator greater for signal <old_y2_27$cmp_gt0002> created at line 490.
+    Found 7-bit comparator greater for signal <old_y2_27$cmp_gt0003> created at line 495.
+    Found 7-bit comparator greater for signal <old_y2_27$cmp_gt0004> created at line 500.
+    Found 7-bit comparator greater for signal <old_y2_27$cmp_gt0005> created at line 505.
+    Found 7-bit comparator greater for signal <old_y2_27$cmp_gt0006> created at line 510.
+    Found 7-bit comparator greater for signal <old_y2_27$cmp_gt0007> created at line 515.
+    Found 7-bit comparator greater for signal <old_y2_27$cmp_gt0008> created at line 520.
+    Found 4-bit subtractor for signal <old_y2_27$share0000>.
+    Found 7-bit subtractor for signal <old_y_10$addsub0000> created at line 225.
+    Found 7-bit comparator greater for signal <old_y_11$cmp_gt0000> created at line 384.
+    Found 7-bit adder for signal <old_y_3$addsub0000> created at line 213.
+    Found 4-bit subtractor for signal <old_yoil_21$addsub0000> created at line 373.
+    Found 27-bit comparator less for signal <old_yoil_21$cmp_lt0000> created at line 358.
+    Found 4-bit comparator greater for signal <old_yoil_22$cmp_gt0000> created at line 463.
+    Found 4-bit adder for signal <old_yoil_9$addsub0000> created at line 367.
+    Found 27-bit register for signal <setcounter>.
+    Found 27-bit adder for signal <setcounter$addsub0000>.
+    Found 27-bit comparator less for signal <setStatus$cmp_lt0000> created at line 141.
+    Found 7-bit register for signal <y>.
+    Found 4-bit register for signal <yoil>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   3 ROM(s).
+	inferred   1 Counter(s).
+	inferred 130 D-type flip-flop(s).
+	inferred  13 Adder/Subtractor(s).
+	inferred  26 Comparator(s).
+Unit <calendar> synthesized.
+
+
+Synthesizing Unit <stopwatch>.
+    Related source file is "stopwatch.v".
+WARNING:Xst:647 - Input <down> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <sec2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <sec1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <msec2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <msec1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <m2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <m1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <$old_m1_44> of Case statement line 349 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <$old_m1_44> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+    Using one-hot encoding for signal <$old_m1_44>.
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <$old_sec1_46> of Case statement line 377 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <$old_sec1_46> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+    Using one-hot encoding for signal <$old_sec1_46>.
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <$old_msec1_48> of Case statement line 405 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <$old_msec1_48> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+    Using one-hot encoding for signal <$old_msec1_48>.
+    Found 16x7-bit ROM for signal <d2$mux0000> created at line 363.
+    Found 16x7-bit ROM for signal <d4$mux0000> created at line 391.
+    Found 16x7-bit ROM for signal <d6$mux0000> created at line 419.
+    Found 7-bit register for signal <d1>.
+    Found 7-bit register for signal <d2>.
+    Found 7-bit register for signal <d3>.
+    Found 7-bit register for signal <d4>.
+    Found 7-bit register for signal <d5>.
+    Found 7-bit register for signal <d6>.
+    Found 27-bit register for signal <counter1>.
+    Found 27-bit adder for signal <counter1$addsub0000> created at line 182.
+    Found 1-bit register for signal <isrunning>.
+    Found 27-bit comparator less for signal <isrunning$cmp_lt0000> created at line 92.
+    Found 7-bit register for signal <m>.
+    Found 7-bit register for signal <msec>.
+    Found 7-bit comparator greater for signal <old_m1_44$cmp_gt0000> created at line 222.
+    Found 7-bit comparator greater for signal <old_m1_44$cmp_gt0001> created at line 227.
+    Found 7-bit comparator greater for signal <old_m1_44$cmp_gt0002> created at line 232.
+    Found 7-bit comparator greater for signal <old_m1_44$cmp_gt0003> created at line 237.
+    Found 7-bit comparator greater for signal <old_m1_44$cmp_gt0004> created at line 242.
+    Found 4-bit subtractor for signal <old_m2_45$share0000>.
+    Found 7-bit adder for signal <old_m_41$addsub0000> created at line 207.
+    Found 7-bit comparator greater for signal <old_m_41$cmp_gt0000> created at line 202.
+    Found 7-bit comparator less for signal <old_m_41$cmp_lt0000> created at line 205.
+    Found 7-bit comparator greater for signal <old_msec1_48$cmp_gt0000> created at line 292.
+    Found 7-bit comparator greater for signal <old_msec1_48$cmp_gt0001> created at line 297.
+    Found 7-bit comparator greater for signal <old_msec1_48$cmp_gt0002> created at line 302.
+    Found 7-bit comparator greater for signal <old_msec1_48$cmp_gt0003> created at line 307.
+    Found 7-bit comparator greater for signal <old_msec1_48$cmp_gt0004> created at line 312.
+    Found 7-bit comparator greater for signal <old_msec1_48$cmp_gt0005> created at line 317.
+    Found 7-bit comparator greater for signal <old_msec1_48$cmp_gt0006> created at line 322.
+    Found 7-bit comparator greater for signal <old_msec1_48$cmp_gt0007> created at line 327.
+    Found 7-bit comparator greater for signal <old_msec1_48$cmp_gt0008> created at line 332.
+    Found 4-bit subtractor for signal <old_msec2_49$share0000>.
+    Found 7-bit adder for signal <old_msec_37$addsub0000> created at line 187.
+    Found 27-bit comparator less for signal <old_msec_37$cmp_lt0000> created at line 129.
+    Found 27-bit comparator less for signal <old_msec_37$cmp_lt0001> created at line 180.
+    Found 7-bit comparator greater for signal <old_sec1_46$cmp_gt0000> created at line 256.
+    Found 7-bit comparator greater for signal <old_sec1_46$cmp_gt0001> created at line 261.
+    Found 7-bit comparator greater for signal <old_sec1_46$cmp_gt0002> created at line 266.
+    Found 7-bit comparator greater for signal <old_sec1_46$cmp_gt0003> created at line 271.
+    Found 7-bit comparator greater for signal <old_sec1_46$cmp_gt0004> created at line 276.
+    Found 4-bit subtractor for signal <old_sec2_47$share0000>.
+    Found 7-bit adder for signal <old_sec_39$addsub0000> created at line 198.
+    Found 7-bit comparator greater for signal <old_sec_39$cmp_gt0000> created at line 195.
+    Found 7-bit register for signal <sec>.
+    Found 27-bit up counter for signal <setcounter>.
+    Found 27-bit up counter for signal <upcounter>.
+    Summary:
+	inferred   3 ROM(s).
+	inferred   2 Counter(s).
+	inferred  91 D-type flip-flop(s).
+	inferred   7 Adder/Subtractor(s).
+	inferred  25 Comparator(s).
+Unit <stopwatch> synthesized.
+
+
+Synthesizing Unit <modeControl1>.
+    Related source file is "modeControl1.v".
+    Found 7-bit register for signal <d1>.
+    Found 7-bit register for signal <d2>.
+    Found 7-bit register for signal <d3>.
+    Found 7-bit register for signal <d4>.
+    Found 7-bit register for signal <d5>.
+    Found 7-bit register for signal <d6>.
+    Found 1-bit register for signal <led1>.
+    Found 1-bit register for signal <led2>.
+    Found 1-bit register for signal <led3>.
+    Found 1-bit register for signal <led4>.
+    Found 1-bit register for signal <led5>.
+    Found 1-bit register for signal <led6>.
+    Found 3-bit register for signal <isUsing>.
+    Found 27-bit up counter for signal <modecounter>.
+    Found 3-bit adder for signal <old_isUsing_1$addsub0000> created at line 109.
+    Found 27-bit comparator less for signal <old_isUsing_1$cmp_lt0000> created at line 98.
+    Found 3-bit comparator less for signal <old_isUsing_1$cmp_lt0001> created at line 108.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  51 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+Unit <modeControl1> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 6
+ 16x7-bit ROM                                          : 6
+# Adders/Subtractors                                   : 21
+ 27-bit adder                                          : 3
+ 3-bit adder                                           : 1
+ 4-bit adder                                           : 2
+ 4-bit subtractor                                      : 8
+ 6-bit adder                                           : 1
+ 6-bit subtractor                                      : 1
+ 7-bit adder                                           : 4
+ 7-bit subtractor                                      : 1
+# Counters                                             : 4
+ 27-bit up counter                                     : 3
+ 31-bit up counter                                     : 1
+# Registers                                            : 44
+ 1-bit register                                        : 14
+ 27-bit register                                       : 3
+ 3-bit register                                        : 1
+ 4-bit register                                        : 2
+ 6-bit register                                        : 2
+ 7-bit register                                        : 22
+# Comparators                                          : 53
+ 27-bit comparator less                                : 6
+ 3-bit comparator less                                 : 1
+ 31-bit comparator less                                : 1
+ 4-bit comparator greater                              : 3
+ 4-bit comparator less                                 : 1
+ 6-bit comparator greater                              : 6
+ 6-bit comparator less                                 : 3
+ 7-bit comparator greater                              : 31
+ 7-bit comparator less                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <cal1/setStatus/FSM> on signal <setStatus[1:3]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 000
+ 001   | 001
+ 010   | 011
+ 011   | 010
+ 100   | 110
+-------------------
+INFO:Xst:2261 - The FF/Latch <led6bit_2> in Unit <cal1> is equivalent to the following FF/Latch, which will be removed : <led4> 
+INFO:Xst:2261 - The FF/Latch <led6bit_3> in Unit <cal1> is equivalent to the following FF/Latch, which will be removed : <led3> 
+INFO:Xst:2261 - The FF/Latch <led6bit_4> in Unit <cal1> is equivalent to the following FF/Latch, which will be removed : <led2> 
+INFO:Xst:2261 - The FF/Latch <led6bit_5> in Unit <cal1> is equivalent to the following FF/Latch, which will be removed : <led1> 
+INFO:Xst:2261 - The FF/Latch <d3_1> in Unit <cal1> is equivalent to the following 3 FFs/Latches, which will be removed : <d3_2> <d3_3> <d3_6> 
+INFO:Xst:2261 - The FF/Latch <d3_4> in Unit <cal1> is equivalent to the following FF/Latch, which will be removed : <d3_5> 
+INFO:Xst:2261 - The FF/Latch <led6bit_0> in Unit <cal1> is equivalent to the following FF/Latch, which will be removed : <led6> 
+INFO:Xst:2261 - The FF/Latch <led6bit_1> in Unit <cal1> is equivalent to the following FF/Latch, which will be removed : <led5> 
+WARNING:Xst:1710 - FF/Latch <d3_0> (without init value) has a constant value of 0 in block <cal1>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <calendar>.
+INFO:Xst:3034 - In order to maximize performance and save block RAM resources, the small ROM <Mrom_d2_mux0000> will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
+INFO:Xst:3034 - In order to maximize performance and save block RAM resources, the small ROM <Mrom_d4_mux0000> will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
+INFO:Xst:3034 - In order to maximize performance and save block RAM resources, the small ROM <Mrom_d6_mux0000> will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
+Unit <calendar> synthesized (advanced).
+
+Synthesizing (advanced) Unit <stopwatch>.
+INFO:Xst:3034 - In order to maximize performance and save block RAM resources, the small ROM <Mrom_d2_mux0000> will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
+INFO:Xst:3034 - In order to maximize performance and save block RAM resources, the small ROM <Mrom_d6_mux0000> will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
+INFO:Xst:3034 - In order to maximize performance and save block RAM resources, the small ROM <Mrom_d4_mux0000> will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
+Unit <stopwatch> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# ROMs                                                 : 6
+ 16x7-bit ROM                                          : 6
+# Adders/Subtractors                                   : 21
+ 27-bit adder                                          : 3
+ 3-bit adder                                           : 1
+ 4-bit adder                                           : 2
+ 4-bit subtractor                                      : 8
+ 6-bit adder                                           : 1
+ 6-bit subtractor                                      : 1
+ 7-bit adder                                           : 4
+ 7-bit subtractor                                      : 1
+# Counters                                             : 4
+ 27-bit up counter                                     : 3
+ 31-bit up counter                                     : 1
+# Registers                                            : 272
+ Flip-Flops                                            : 272
+# Comparators                                          : 53
+ 27-bit comparator less                                : 6
+ 3-bit comparator less                                 : 1
+ 31-bit comparator less                                : 1
+ 4-bit comparator greater                              : 3
+ 4-bit comparator less                                 : 1
+ 6-bit comparator greater                              : 6
+ 6-bit comparator less                                 : 3
+ 7-bit comparator greater                              : 31
+ 7-bit comparator less                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <d3_0> (without init value) has a constant value of 0 in block <calendar>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <led6bit_2> in Unit <calendar> is equivalent to the following FF/Latch, which will be removed : <led4> 
+INFO:Xst:2261 - The FF/Latch <led6bit_3> in Unit <calendar> is equivalent to the following FF/Latch, which will be removed : <led3> 
+INFO:Xst:2261 - The FF/Latch <led6bit_4> in Unit <calendar> is equivalent to the following FF/Latch, which will be removed : <led2> 
+INFO:Xst:2261 - The FF/Latch <led6bit_5> in Unit <calendar> is equivalent to the following FF/Latch, which will be removed : <led1> 
+INFO:Xst:2261 - The FF/Latch <d3_1> in Unit <calendar> is equivalent to the following 3 FFs/Latches, which will be removed : <d3_2> <d3_3> <d3_6> 
+INFO:Xst:2261 - The FF/Latch <d3_4> in Unit <calendar> is equivalent to the following FF/Latch, which will be removed : <d3_5> 
+INFO:Xst:2261 - The FF/Latch <led6bit_0> in Unit <calendar> is equivalent to the following FF/Latch, which will be removed : <led6> 
+INFO:Xst:2261 - The FF/Latch <led6bit_1> in Unit <calendar> is equivalent to the following FF/Latch, which will be removed : <led5> 
+INFO:Xst:2261 - The FF/Latch <d3_3> in Unit <stopwatch> is equivalent to the following FF/Latch, which will be removed : <d3_6> 
+INFO:Xst:2261 - The FF/Latch <d1_3> in Unit <stopwatch> is equivalent to the following FF/Latch, which will be removed : <d1_6> 
+INFO:Xst:2261 - The FF/Latch <d5_3> in Unit <calendar> is equivalent to the following FF/Latch, which will be removed : <d5_6> 
+
+Optimizing unit <modeControl1> ...
+WARNING:Xst:1293 - FF/Latch <isUsing_0> has a constant value of 1 in block <modeControl1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <isUsing_2> has a constant value of 0 in block <modeControl1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <isUsing_2> has a constant value of 0 in block <modeControl1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <isUsing_2> has a constant value of 0 in block <modeControl1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <isUsing_2> has a constant value of 0 in block <modeControl1>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <calendar> ...
+WARNING:Xst:1293 - FF/Latch <yoil_3> has a constant value of 0 in block <calendar>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <yoil_3> has a constant value of 0 in block <calendar>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <yoil_3> has a constant value of 0 in block <calendar>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <yoil_3> has a constant value of 0 in block <calendar>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <stopwatch> ...
+WARNING:Xst:1293 - FF/Latch <sec_6> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <sec_6> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <sec_6> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <m_6> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sec_6> has a constant value of 0 in block <stopwatch>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+INFO:Xst:2261 - The FF/Latch <d3_3> in Unit <modeControl1> is equivalent to the following FF/Latch, which will be removed : <d3_6> 
+Found area constraint ratio of 100 (+ 5) on block modeControl1, actual ratio is 78.
+FlipFlop cal1/setStatus_FSM_FFd3 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 368
+ Flip-Flops                                            : 368
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : modeControl1.ngr
+Top Level Output File Name         : modeControl1
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 54
+
+Cell Usage :
+# BELS                             : 1529
+#      GND                         : 1
+#      INV                         : 25
+#      LUT1                        : 203
+#      LUT2                        : 87
+#      LUT2_D                      : 5
+#      LUT2_L                      : 13
+#      LUT3                        : 141
+#      LUT3_D                      : 20
+#      LUT3_L                      : 16
+#      LUT4                        : 426
+#      LUT4_D                      : 50
+#      LUT4_L                      : 44
+#      MUXCY                       : 263
+#      MUXF5                       : 40
+#      MUXF6                       : 1
+#      VCC                         : 1
+#      XORCY                       : 193
+# FlipFlops/Latches                : 368
+#      FD                          : 190
+#      FDR                         : 122
+#      FDRE                        : 27
+#      FDRS                        : 15
+#      FDS                         : 14
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 53
+#      IBUF                        : 5
+#      OBUF                        : 48
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s50antqg144-5 
+
+ Number of Slices:                      543  out of    704    77%  
+ Number of Slice Flip Flops:            368  out of   1408    26%  
+ Number of 4 input LUTs:               1030  out of   1408    73%  
+ Number of IOs:                          54
+ Number of bonded IOBs:                  54  out of    108    50%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clkBoard                           | BUFGP                  | 368   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 18.034ns (Maximum Frequency: 55.451MHz)
+   Minimum input arrival time before clock: 18.658ns
+   Maximum output required time after clock: 5.271ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clkBoard'
+  Clock period: 18.034ns (frequency: 55.451MHz)
+  Total number of paths / destination ports: 9460904 / 585
+-------------------------------------------------------------------------
+Delay:               18.034ns (Levels of Logic = 26)
+  Source:            cal1/counter1_6 (FF)
+  Destination:       cal1/d6_1 (FF)
+  Source Clock:      clkBoard rising
+  Destination Clock: clkBoard rising
+
+  Data Path: cal1/counter1_6 to cal1/d6_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.495   0.559  cal1/counter1_6 (cal1/counter1_6)
+     LUT4:I0->O            1   0.561   0.000  cal1/Mcompar_old_yoil_21_cmp_lt0000_lut<0> (cal1/Mcompar_old_yoil_21_cmp_lt0000_lut<0>)
+     MUXCY:S->O            1   0.523   0.000  cal1/Mcompar_old_yoil_21_cmp_lt0000_cy<0> (cal1/Mcompar_old_yoil_21_cmp_lt0000_cy<0>)
+     MUXCY:CI->O           1   0.065   0.000  cal1/Mcompar_old_yoil_21_cmp_lt0000_cy<1> (cal1/Mcompar_old_yoil_21_cmp_lt0000_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  cal1/Mcompar_old_yoil_21_cmp_lt0000_cy<2> (cal1/Mcompar_old_yoil_21_cmp_lt0000_cy<2>)
+     MUXCY:CI->O           1   0.065   0.000  cal1/Mcompar_old_yoil_21_cmp_lt0000_cy<3> (cal1/Mcompar_old_yoil_21_cmp_lt0000_cy<3>)
+     MUXCY:CI->O           1   0.065   0.000  cal1/Mcompar_old_yoil_21_cmp_lt0000_cy<4> (cal1/Mcompar_old_yoil_21_cmp_lt0000_cy<4>)
+     MUXCY:CI->O           1   0.065   0.000  cal1/Mcompar_old_yoil_21_cmp_lt0000_cy<5> (cal1/Mcompar_old_yoil_21_cmp_lt0000_cy<5>)
+     MUXCY:CI->O           1   0.065   0.000  cal1/Mcompar_old_yoil_21_cmp_lt0000_cy<6> (cal1/Mcompar_old_yoil_21_cmp_lt0000_cy<6>)
+     MUXCY:CI->O           1   0.065   0.000  cal1/Mcompar_old_yoil_21_cmp_lt0000_cy<7> (cal1/Mcompar_old_yoil_21_cmp_lt0000_cy<7>)
+     MUXCY:CI->O           1   0.065   0.000  cal1/Mcompar_old_yoil_21_cmp_lt0000_cy<8> (cal1/Mcompar_old_yoil_21_cmp_lt0000_cy<8>)
+     MUXCY:CI->O           1   0.065   0.000  cal1/Mcompar_old_yoil_21_cmp_lt0000_cy<9> (cal1/Mcompar_old_yoil_21_cmp_lt0000_cy<9>)
+     MUXCY:CI->O          31   0.179   1.073  cal1/Mcompar_old_yoil_21_cmp_lt0000_cy<10> (cal1/Mcompar_old_yoil_21_cmp_lt0000_cy<10>)
+     MUXF5:S->O            1   0.652   0.359  cal1/_old_m_13<2>97 (cal1/_old_m_13<2>97)
+     LUT4:I3->O            1   0.561   0.000  cal1/_old_m_13<2>212_G (N505)
+     MUXF5:I1->O          26   0.229   1.073  cal1/_old_m_13<2>212 (cal1/_old_m_13<2>)
+     LUT4_D:I3->O          4   0.561   0.565  cal1/old_day_20_cmp_gt0000111_SW1 (N198)
+     LUT3_L:I1->LO         1   0.562   0.102  cal1/old_day_20_cmp_gt0000111 (cal1/N11)
+     LUT4:I3->O            7   0.561   0.604  cal1/old_day_20_cmp_gt0000163 (cal1/old_day_20_cmp_gt0000163)
+     LUT4_D:I3->LO         1   0.561   0.102  cal1/old_day_20_cmp_gt0000175 (N698)
+     LUT4:I3->O            7   0.561   0.625  cal1/_old_day_23<2>227 (cal1/_old_day_23<2>227)
+     LUT4:I2->O            1   0.561   0.380  cal1/_old_day_23<4>55_SW0 (N536)
+     LUT3:I2->O           12   0.561   0.819  cal1/_old_day_23<4>55 (cal1/_old_day_23<4>)
+     LUT4:I3->O            3   0.561   0.451  cal1/Msub_old_day2_31_share0000_lut<2>1 (cal1/Msub_old_day2_31_share0000_lut<2>)
+     MUXF5:S->O            1   0.652   0.359  cal1/_old_day2_31<3>2_SW0 (N212)
+     LUT4_D:I3->LO         1   0.561   0.123  cal1/_old_day2_31<3>2 (N664)
+     LUT3:I2->O            1   0.561   0.357  cal1/Mrom_d6_mux00001127 (cal1/Mrom_d6_mux00001127)
+     FDRS:S                    0.435          cal1/d6_1
+    ----------------------------------------
+    Total                     18.034ns (10.483ns logic, 7.551ns route)
+                                       (58.1% logic, 41.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clkBoard'
+  Total number of paths / destination ports: 1572056 / 354
+-------------------------------------------------------------------------
+Offset:              18.658ns (Levels of Logic = 17)
+  Source:            down (PAD)
+  Destination:       cal1/d6_1 (FF)
+  Destination Clock: clkBoard rising
+
+  Data Path: down to cal1/d6_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            57   0.824   1.188  down_IBUF (down_IBUF)
+     LUT2:I0->O            3   0.561   0.559  cal1/_old_m_13<1>73 (cal1/_old_day_15<1>27)
+     LUT4:I0->O            1   0.561   0.000  cal1/_old_m_13<1>113_SW0_G (N515)
+     MUXF5:I1->O           1   0.229   0.359  cal1/_old_m_13<1>113_SW0 (N411)
+     LUT4:I3->O            1   0.561   0.359  cal1/_old_m_13<3>211_SW8 (N325)
+     LUT4:I3->O           24   0.561   1.130  cal1/_old_m_13<1>146 (cal1/Msub_old_m2_29_addsub0000_cy<1>)
+     LUT2:I1->O            1   0.562   0.359  cal1/_old_day_23<0>211_SW0 (N187)
+     LUT4:I3->O           15   0.561   0.887  cal1/_old_day_23<5>1 (cal1/_old_day_23<5>)
+     LUT4:I2->O            1   0.561   0.359  cal1/old_day_20_cmp_gt0000175_SW0 (N259)
+     LUT4:I3->O            2   0.561   0.403  cal1/_old_day_20<4>34_SW0 (N359)
+     LUT4:I2->O            6   0.561   0.571  cal1/_old_day_20<4>34 (cal1/_old_day_20<4>)
+     LUT4:I3->O            1   0.561   0.380  cal1/_old_day_23<4>55_SW0 (N536)
+     LUT3:I2->O           12   0.561   0.819  cal1/_old_day_23<4>55 (cal1/_old_day_23<4>)
+     LUT4:I3->O            3   0.561   0.451  cal1/Msub_old_day2_31_share0000_lut<2>1 (cal1/Msub_old_day2_31_share0000_lut<2>)
+     MUXF5:S->O            1   0.652   0.359  cal1/_old_day2_31<3>2_SW0 (N212)
+     LUT4_D:I3->LO         1   0.561   0.123  cal1/_old_day2_31<3>2 (N664)
+     LUT3:I2->O            1   0.561   0.357  cal1/Mrom_d6_mux00001127 (cal1/Mrom_d6_mux00001127)
+     FDRS:S                    0.435          cal1/d6_1
+    ----------------------------------------
+    Total                     18.658ns (9.995ns logic, 8.663ns route)
+                                       (53.6% logic, 46.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clkBoard'
+  Total number of paths / destination ports: 48 / 48
+-------------------------------------------------------------------------
+Offset:              5.271ns (Levels of Logic = 1)
+  Source:            d3_3 (FF)
+  Destination:       d3<6> (PAD)
+  Source Clock:      clkBoard rising
+
+  Data Path: d3_3 to d3<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.495   0.380  d3_3 (d3_3)
+     OBUF:I->O                 4.396          d3_3_OBUF (d3<3>)
+    ----------------------------------------
+    Total                      5.271ns (4.891ns logic, 0.380ns route)
+                                       (92.8% logic, 7.2% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 8.87 secs
+ 
+--> 
+
+
+Total memory usage is 524552 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   29 (   0 filtered)
+Number of infos    :   32 (   0 filtered)
+

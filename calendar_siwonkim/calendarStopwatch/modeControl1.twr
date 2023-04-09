@@ -1,0 +1,129 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v 3 -s 5 -n
+3 -fastpaths -xml modeControl1.twx modeControl1.ncd -o modeControl1.twr
+modeControl1.pcf -ucf calendarUCF.ucf
+
+Design file:              modeControl1.ncd
+Physical constraint file: modeControl1.pcf
+Device,package,speed:     xc3s50an,tqg144,-5 (PRODUCTION 1.42 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock clkBoard
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+down        |   15.740(R)|   -1.276(R)|clkBoard_BUFGP    |   0.000|
+mode        |    4.395(R)|    0.022(R)|clkBoard_BUFGP    |   0.000|
+reset       |   15.199(R)|   -0.548(R)|clkBoard_BUFGP    |   0.000|
+set         |    4.828(R)|   -1.109(R)|clkBoard_BUFGP    |   0.000|
+up          |   15.653(R)|   -1.105(R)|clkBoard_BUFGP    |   0.000|
+------------+------------+------------+------------------+--------+
+
+Clock clkBoard to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+d1<0>       |    6.976(R)|clkBoard_BUFGP    |   0.000|
+d1<1>       |    6.927(R)|clkBoard_BUFGP    |   0.000|
+d1<2>       |    7.007(R)|clkBoard_BUFGP    |   0.000|
+d1<3>       |    6.698(R)|clkBoard_BUFGP    |   0.000|
+d1<4>       |    7.039(R)|clkBoard_BUFGP    |   0.000|
+d1<5>       |    6.716(R)|clkBoard_BUFGP    |   0.000|
+d1<6>       |    6.751(R)|clkBoard_BUFGP    |   0.000|
+d2<0>       |    6.832(R)|clkBoard_BUFGP    |   0.000|
+d2<1>       |    6.394(R)|clkBoard_BUFGP    |   0.000|
+d2<2>       |    6.963(R)|clkBoard_BUFGP    |   0.000|
+d2<3>       |    6.888(R)|clkBoard_BUFGP    |   0.000|
+d2<4>       |    7.157(R)|clkBoard_BUFGP    |   0.000|
+d2<5>       |    7.167(R)|clkBoard_BUFGP    |   0.000|
+d2<6>       |    6.899(R)|clkBoard_BUFGP    |   0.000|
+d3<0>       |    7.139(R)|clkBoard_BUFGP    |   0.000|
+d3<1>       |    7.368(R)|clkBoard_BUFGP    |   0.000|
+d3<2>       |    7.212(R)|clkBoard_BUFGP    |   0.000|
+d3<3>       |    6.867(R)|clkBoard_BUFGP    |   0.000|
+d3<4>       |    7.162(R)|clkBoard_BUFGP    |   0.000|
+d3<5>       |    7.092(R)|clkBoard_BUFGP    |   0.000|
+d3<6>       |    6.879(R)|clkBoard_BUFGP    |   0.000|
+d4<0>       |    7.015(R)|clkBoard_BUFGP    |   0.000|
+d4<1>       |    6.960(R)|clkBoard_BUFGP    |   0.000|
+d4<2>       |    7.372(R)|clkBoard_BUFGP    |   0.000|
+d4<3>       |    7.177(R)|clkBoard_BUFGP    |   0.000|
+d4<4>       |    6.890(R)|clkBoard_BUFGP    |   0.000|
+d4<5>       |    6.847(R)|clkBoard_BUFGP    |   0.000|
+d4<6>       |    7.741(R)|clkBoard_BUFGP    |   0.000|
+d5<0>       |    7.225(R)|clkBoard_BUFGP    |   0.000|
+d5<1>       |    6.928(R)|clkBoard_BUFGP    |   0.000|
+d5<2>       |    6.966(R)|clkBoard_BUFGP    |   0.000|
+d5<3>       |    6.871(R)|clkBoard_BUFGP    |   0.000|
+d5<4>       |    7.151(R)|clkBoard_BUFGP    |   0.000|
+d5<5>       |    7.085(R)|clkBoard_BUFGP    |   0.000|
+d5<6>       |    7.090(R)|clkBoard_BUFGP    |   0.000|
+d6<0>       |    6.904(R)|clkBoard_BUFGP    |   0.000|
+d6<1>       |    7.063(R)|clkBoard_BUFGP    |   0.000|
+d6<2>       |    6.545(R)|clkBoard_BUFGP    |   0.000|
+d6<3>       |    6.461(R)|clkBoard_BUFGP    |   0.000|
+d6<4>       |    7.214(R)|clkBoard_BUFGP    |   0.000|
+d6<5>       |    7.410(R)|clkBoard_BUFGP    |   0.000|
+d6<6>       |    7.163(R)|clkBoard_BUFGP    |   0.000|
+led1        |    7.015(R)|clkBoard_BUFGP    |   0.000|
+led2        |    6.509(R)|clkBoard_BUFGP    |   0.000|
+led3        |    6.977(R)|clkBoard_BUFGP    |   0.000|
+led4        |    7.236(R)|clkBoard_BUFGP    |   0.000|
+led5        |    6.606(R)|clkBoard_BUFGP    |   0.000|
+led6        |    6.507(R)|clkBoard_BUFGP    |   0.000|
+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clkBoard
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clkBoard       |   16.222|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Mon Dec 19 04:38:43 2022 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 358 MB
+
+
+

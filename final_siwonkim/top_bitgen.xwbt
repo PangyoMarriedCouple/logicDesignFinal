@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/ise/XilinxFolder/final_siwonkim/top.ncd
+OUTFILE=/home/ise/XilinxFolder/final_siwonkim/top.bit
+FAMILY=Spartan3A and Spartan3AN
+PART=xc3s50an-4tqg144
+WORKINGDIR=/home/ise/XilinxFolder/final_siwonkim
+LICENSE=ISE
+USER_INFO=8416_11442_1478797146_620

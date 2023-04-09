@@ -1,0 +1,5 @@
+verilog work "displayControl.v"
+verilog work "clock.v"
+verilog work "alarm.v"
+verilog work "modeControl.v"
+verilog work "top.v"

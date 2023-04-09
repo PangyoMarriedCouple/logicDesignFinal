@@ -1,0 +1,7 @@
+MO clock NULL clock.v vlg20/clock.bin 1671394907
+MO pulseGenerator NULL pulseGenerator.v vlg34/pulse_generator.bin 1671380496
+MO alarm NULL alarm.v vlg2D/alarm.bin 1671394907
+MO top NULL top.v vlg6F/top.bin 1671363998
+MO modeControl NULL modeControl.v vlg36/mode_control.bin 1671394907
+MO calendar NULL calendar.v vlg12/calendar.bin 1671251270
+MO displayControl NULL displayControl.v vlg07/display_control.bin 1671394907
